@@ -1,0 +1,38 @@
+2024-08-16 12:02:37.848 | INFO     | __main__:<module>:6 - starting
+2024-08-16 12:02:37.849 | INFO     | client:__init__:13 - client done
+2024-08-16 12:02:41.605 | INFO     | client:new_page:45 - Page socorro jesus created successfully at https://www.notion.so/socorro-jesus-e64df83b3a224933aeff948f1822f7fb
+2024-08-16 12:02:44.588 | INFO     | pages:add_paragraph:138 - paragraph created successfully at https://www.notion.so/socorro-jesus-e64df83b3a224933aeff948f1822f7fb
+2024-08-16 12:02:45.916 | INFO     | pages:add_banner:91 - banner added successfully to the page socorro jesus
+2024-08-16 12:02:46.315 | INFO     | pages:add_heading:65 - Failed to add headding. Status code: 400
+2024-08-16 12:02:46.316 | INFO     | pages:add_heading:66 - {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.children[0].heading_1.rich_text should be an array, instead was `{\"type\":\"text\",\"text\":{\"content\":\"1 LIVRO\"},\"annotation...`.","request_id":"ac3d93d4-2391-476f-aeec-32562dbd3dfd"}
+2024-08-16 12:02:46.733 | INFO     | pages:add_heading:65 - Failed to add headding. Status code: 400
+2024-08-16 12:02:46.734 | INFO     | pages:add_heading:66 - {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.children[0].heading_2.rich_text should be an array, instead was `{\"type\":\"text\",\"text\":{\"content\":\"1 Capitulo\"},\"annotat...`.","request_id":"839d87c4-4377-4b56-8286-7b365a139d26"}
+2024-08-16 12:02:47.060 | INFO     | pages:add_heading:65 - Failed to add headding. Status code: 400
+2024-08-16 12:02:47.061 | INFO     | pages:add_heading:66 - {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.children[0].heading_3.rich_text should be an array, instead was `{\"type\":\"text\",\"text\":{\"content\":\"1 Seção\"},\"annotation...`.","request_id":"7b428bd4-2948-4ffc-8b18-9a228e622f1c"}
+2024-08-16 12:03:51.593 | INFO     | __main__:<module>:6 - starting
+2024-08-16 12:03:51.594 | INFO     | client:__init__:13 - client done
+2024-08-16 12:03:52.165 | INFO     | client:new_page:45 - Page socorro jesus created successfully at https://www.notion.so/socorro-jesus-fb95a256caf44a388ddda423f84cda3b
+2024-08-16 12:03:53.823 | INFO     | pages:add_paragraph:138 - paragraph created successfully at https://www.notion.so/socorro-jesus-fb95a256caf44a388ddda423f84cda3b
+2024-08-16 12:03:55.544 | INFO     | pages:add_banner:91 - banner added successfully to the page socorro jesus
+2024-08-16 12:03:56.670 | INFO     | pages:add_heading:65 - Failed to add headding. Status code: 400
+2024-08-16 12:03:56.672 | INFO     | pages:add_heading:66 - {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.children[0].heading_1.rich_text[0].annotations.is_toggleable should be not present, instead was `false`.","request_id":"21d93ec1-e825-4992-88d9-b038115cd1c2"}
+2024-08-16 12:03:57.161 | INFO     | pages:add_heading:65 - Failed to add headding. Status code: 400
+2024-08-16 12:03:57.162 | INFO     | pages:add_heading:66 - {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.children[0].heading_2.rich_text[0].annotations.is_toggleable should be not present, instead was `false`.","request_id":"6e2efc7f-15b3-4254-a757-2f05a5996657"}
+2024-08-16 12:03:57.528 | INFO     | pages:add_heading:65 - Failed to add headding. Status code: 400
+2024-08-16 12:03:57.528 | INFO     | pages:add_heading:66 - {"object":"error","status":400,"code":"validation_error","message":"body failed validation: body.children[0].heading_3.rich_text[0].annotations.is_toggleable should be not present, instead was `true`.","request_id":"2ac9d61b-a9ac-4e9b-9f5d-e12e9c755fbc"}
+2024-08-16 12:04:34.326 | INFO     | __main__:<module>:6 - starting
+2024-08-16 12:04:34.326 | INFO     | client:__init__:13 - client done
+2024-08-16 12:04:36.595 | INFO     | client:new_page:45 - Page socorro jesus created successfully at https://www.notion.so/socorro-jesus-56394fca1fa747dd904824a63bd21866
+2024-08-16 12:04:39.374 | INFO     | pages:add_paragraph:134 - paragraph created successfully at https://www.notion.so/socorro-jesus-56394fca1fa747dd904824a63bd21866
+2024-08-16 12:04:41.013 | INFO     | pages:add_banner:87 - banner added successfully to the page socorro jesus
+2024-08-16 12:04:42.652 | INFO     | pages:add_heading:59 - heading added successfully at page socorro jesus
+2024-08-16 12:04:43.558 | INFO     | pages:add_heading:59 - heading added successfully at page socorro jesus
+2024-08-16 12:04:46.133 | INFO     | pages:add_heading:59 - heading added successfully at page socorro jesus
+2024-08-16 12:05:40.951 | INFO     | __main__:<module>:6 - starting
+2024-08-16 12:05:40.952 | INFO     | client:__init__:13 - client done
+2024-08-16 12:05:42.065 | INFO     | client:new_page:45 - Page socorro jesus created successfully at https://www.notion.so/socorro-jesus-5e723a1ad28b4a69a1a956845ca2ab25
+2024-08-16 12:05:42.800 | INFO     | pages:add_paragraph:136 - paragraph created successfully at https://www.notion.so/socorro-jesus-5e723a1ad28b4a69a1a956845ca2ab25
+2024-08-16 12:05:43.887 | INFO     | pages:add_banner:89 - banner added successfully to the page socorro jesus
+2024-08-16 12:05:45.411 | INFO     | pages:add_heading:61 - heading added successfully at page socorro jesus
+2024-08-16 12:05:47.680 | INFO     | pages:add_heading:61 - heading added successfully at page socorro jesus
+2024-08-16 12:05:48.704 | INFO     | pages:add_heading:61 - heading added successfully at page socorro jesus
