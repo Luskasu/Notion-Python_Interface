@@ -4,38 +4,32 @@ from loguru import logger
 from pages import Page
 from requests import post, get
 from json import dumps
+from config import *
 
 class Client():
     def __init__(self, home_id:str, token=getenv("NOTION_TOKEN")):
+        self.headers = {
+            "Authorization": f"Bearer {getenv('NOTION_TOKEN')}",
+            "Content-Type": "application/json",
+            "Notion-Version": NOTION_API_VERSION
+        }
         logger.info("STARTING CLIENT")
         load_dotenv(".env")
         self.token = token
         self.home = self.get_page_by_id(home_id)
         logger.info(f"client home defined to page {self.home.title} at url {self.home.PAGE_URL}\n (id {self.home.PAGE_ID})")
-        
-        self.headers = {
-            "Authorization": f"Bearer {getenv('NOTION_TOKEN')}",
-            "Content-Type": "application/json",
-            "Notion-Version": "2022-06-28"
-        }
         logger.info("CLIENT DONE")
-
+    
+    
 
     def get_page_by_id(self, page_id:str) -> Page:
-        headers = {
-            "Authorization": f"Bearer {getenv('NOTION_TOKEN')}",
-            "Content-Type": "application/json",
-            "Notion-Version": "2022-06-28"
-        }
-        url = f"https://api.notion.com/v1/pages/{page_id}"
 
-        response = get(url, headers=headers)
+        url = f"{NOTION_BASE_URL}/pages/{page_id}"
 
-        for key in response.json():
-            print(key)
+        response = get(url, headers=self.headers)
+
         page_icon = response.json().get("icon")
         page_root = response.json().get("parent")
-
         page_title = response.json().get("properties")
         page_title = page_title["title"]["title"][0]["text"]["content"]
         page_url = response.json().get("url")
@@ -43,7 +37,7 @@ class Client():
         return Page(page_title, page_icon, page_root, response)
 
     def new_page(self, title:str, emoji:str, root:str="") -> Page:
-        url = "https://api.notion.com/v1/pages"
+        url = f"{NOTION_BASE_URL}/pages"
         if root == "":
             root = self.home.PAGE_ID
 

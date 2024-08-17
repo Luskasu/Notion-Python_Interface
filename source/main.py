@@ -6,8 +6,8 @@ if __name__ == '__main__':
     logger.info("starting")
     try:
         client = Client("22ee7b2c71ce4331a690d2bc9a1fd976")
-        a = client.new_page("aaaaaaaaa", "👍")        
-        
+        a = client.get_page_by_id("f6afed2a091f45cc92f303c1923572af")
+        print(a.subpages)
         
     except Exception as e:
         logger.exception(e)

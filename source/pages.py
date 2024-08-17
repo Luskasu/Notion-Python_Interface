@@ -1,49 +1,43 @@
 from json import dumps
 from loguru import logger
-from emoji import emojize
-from requests import Response, patch
+from requests import Response, patch, get
 from os import getenv
+from config import *
 import re
-
-def extract_text_formatting(text) -> list:
-    result = []
-    pattern = r'\*\*\*(.*?)\*\*\*|\*\*(.*?)\*\*|\*(.*?)\*|(.+?(?=\*\*\*|\*\*|\*|$))'
-    matches = re.findall(pattern, text)
-
-    for bold_italic, bold, italic, normal in matches:
-        if bold_italic:
-            result.append(["bold_italic", bold_italic])
-        if bold:
-            result.append(["bold", bold])
-        elif italic:
-            result.append(["italic", italic])
-        elif normal:  # Ignorar espaços em branco
-            result.append(["normal", normal])
-    return result
 
 class Page():
     def __init__(self, title:str, emoji:str, root:str, response:Response):
+        self.headers = {
+            "Authorization": f"Bearer {getenv('NOTION_TOKEN')}",
+            "Content-Type": "application/json",
+            "Notion-Version": NOTION_API_VERSION
+        }
+
         self.title = title
         self.emoji = emoji
         self.root = root
         self.PAGE_URL = response.json().get('url')
         self.PAGE_ID = self.PAGE_URL.split('-')[-1]
-        
-        
+        self.subpages = response.json().get('child_page')
+        for key in response.json().get("object"):
+            print(key)
     
     def __str__(self) -> str:
         return f"{self.title}, {self.PAGE_URL}, {self.emoji}, {self.root}"
     
+    def get_all_subpages(self) -> list:
+        url = f"{NOTION_BASE_URL}/blocks/{self.PAGE_ID}/children"
+        all_subpages = []
 
-    
+
+        response = get(url, headers=self.headers)
+        print(response.json())
+        
+        return all_subpages
 
     def add_heading(self, text:str, level:int, is_toggleable:bool):
-        self.headers = {
-            "Authorization": f"Bearer {getenv('NOTION_TOKEN')}",
-            "Content-Type": "application/json",
-            "Notion-Version": "2022-06-28"
-        }
-        url = f"https://api.notion.com/v1/blocks/{self.PAGE_ID}/children"
+        
+        url = f"{NOTION_BASE_URL}/blocks/{self.PAGE_ID}/children"
         data = {
             "children": [
                 {
@@ -72,12 +66,7 @@ class Page():
 
     def add_banner(self, image_url:str) -> Response:
         self.BANNER_URL = image_url
-        self.headers = {
-            "Authorization": f"Bearer {getenv('NOTION_TOKEN')}",
-            "Content-Type": "application/json",
-            "Notion-Version": "2022-06-28"
-        }
-        url = f"https://api.notion.com/v1/pages/{self.PAGE_ID}"
+        url = f"{NOTION_BASE_URL}/pages/{self.PAGE_ID}"
         data = {
             "cover": {
                 "type": "external",
@@ -99,15 +88,10 @@ class Page():
 
     def add_paragraph(self, text:str) -> Response:
         text_list = []
-        url = f"https://api.notion.com/v1/blocks/{self.PAGE_ID}/children"
+        url = f"{NOTION_BASE_URL}/blocks/{self.PAGE_ID}/children"
 
 
         texts = extract_text_formatting(text)
-        self.headers = {
-            "Authorization": f"Bearer {getenv('NOTION_TOKEN')}",
-            "Content-Type": "application/json",
-            "Notion-Version": "2022-06-28"
-        }
 
         for t in texts:
             dic = {
@@ -144,3 +128,19 @@ class Page():
             return
 
         return response
+
+def extract_text_formatting(text) -> list:
+    result = []
+    pattern = r'\*\*\*(.*?)\*\*\*|\*\*(.*?)\*\*|\*(.*?)\*|(.+?(?=\*\*\*|\*\*|\*|$))'
+    matches = re.findall(pattern, text)
+
+    for bold_italic, bold, italic, normal in matches:
+        if bold_italic:
+            result.append(["bold_italic", bold_italic])
+        if bold:
+            result.append(["bold", bold])
+        elif italic:
+            result.append(["italic", italic])
+        elif normal:
+            result.append(["normal", normal])
+    return result

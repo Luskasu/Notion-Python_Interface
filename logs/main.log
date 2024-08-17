@@ -326,3 +326,187 @@ TypeError: 'NoneType' object is not subscriptable
 2024-08-17 13:05:09.436 | INFO     | client:__init__:21 - CLIENT DONE
 2024-08-17 13:05:10.979 | INFO     | client:new_page:69 - Page aaaaaaaaa created successfully at https://www.notion.so/aaaaaaaaa-446fc9e065d64641a3f399fe17e9f58d
 2024-08-17 13:05:10.980 | INFO     | __main__:<module>:15 - END
+2024-08-17 16:46:07.718 | INFO     | __main__:<module>:6 - starting
+2024-08-17 16:46:07.718 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 16:46:08.186 | INFO     | client:__init__:20 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 16:46:08.187 | INFO     | client:__init__:21 - CLIENT DONE
+2024-08-17 16:46:08.960 | INFO     | client:new_page:70 - Page aaaaaaaaa created successfully at https://www.notion.so/aaaaaaaaa-3780cd8ad53f49fdb2b4e69b14f317e5
+2024-08-17 16:46:09.722 | INFO     | client:new_page:70 - Page bbbbbbbbb created successfully at https://www.notion.so/bbbbbbbbb-fff7c6c063de81ce9414e82fa339e8ee
+2024-08-17 16:46:09.723 | ERROR    | __main__:<module>:14 - 'Page' object has no attribute 'headers'
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/source/main.py", line 11, in <module>
+    a.get_all_subpages()
+    │ └ <function Page.get_all_subpages at 0x7622f8ec9750>
+    └ <pages.Page object at 0x7622f8e8bd30>
+
+  File "/home/lusca/projetos/notion-auto/source/pages.py", line 47, in get_all_subpages
+    response = get(url, headers=self.headers)
+               │   │            └ <pages.Page object at 0x7622f8e8bd30>
+               │   └ 'https://api.notion.com/v1/blocks/3780cd8ad53f49fdb2b4e69b14f317e5/children'
+               └ <function get at 0x7622f8ec92d0>
+
+AttributeError: 'Page' object has no attribute 'headers'
+2024-08-17 16:46:09.731 | INFO     | __main__:<module>:16 - END
+2024-08-17 16:46:42.614 | INFO     | __main__:<module>:6 - starting
+2024-08-17 16:46:42.614 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 16:46:43.124 | INFO     | client:__init__:20 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 16:46:43.124 | INFO     | client:__init__:21 - CLIENT DONE
+2024-08-17 16:46:45.591 | INFO     | client:new_page:70 - Page aaaaaaaaa created successfully at https://www.notion.so/aaaaaaaaa-3004333be4f94288a76e3f17aea7e646
+2024-08-17 16:46:46.123 | INFO     | client:new_page:70 - Page bbbbbbbbb created successfully at https://www.notion.so/bbbbbbbbb-fff7c6c063de8144b2d7db718205f111
+2024-08-17 16:46:46.472 | ERROR    | __main__:<module>:14 - get expected at least 1 argument, got 0
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/source/main.py", line 11, in <module>
+    a.get_all_subpages()
+    │ └ <function Page.get_all_subpages at 0x766f2f8cd750>
+    └ <pages.Page object at 0x766f2f88fd30>
+
+  File "/home/lusca/projetos/notion-auto/source/pages.py", line 48, in get_all_subpages
+    print(response.json().get())
+          │        └ <function Response.json at 0x766f2f8a7400>
+          └ <Response [200]>
+
+TypeError: get expected at least 1 argument, got 0
+2024-08-17 16:46:46.480 | INFO     | __main__:<module>:16 - END
+2024-08-17 16:47:11.217 | INFO     | __main__:<module>:6 - starting
+2024-08-17 16:47:11.217 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 16:47:11.607 | INFO     | client:__init__:20 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 16:47:11.608 | INFO     | client:__init__:21 - CLIENT DONE
+2024-08-17 16:47:12.363 | INFO     | client:new_page:70 - Page aaaaaaaaa created successfully at https://www.notion.so/aaaaaaaaa-bd0a85cab21048d292398147314a4727
+2024-08-17 16:47:13.072 | INFO     | client:new_page:70 - Page bbbbbbbbb created successfully at https://www.notion.so/bbbbbbbbb-b211b5645a714d34a5f4db0e5ae717ab
+2024-08-17 16:47:14.040 | INFO     | __main__:<module>:16 - END
+2024-08-17 16:49:24.250 | INFO     | __main__:<module>:6 - starting
+2024-08-17 16:49:24.251 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 16:49:24.604 | INFO     | client:__init__:20 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 16:49:24.605 | INFO     | client:__init__:21 - CLIENT DONE
+2024-08-17 16:49:26.135 | INFO     | client:new_page:70 - Page aaaaaaaaa created successfully at https://www.notion.so/aaaaaaaaa-f6afed2a091f45cc92f303c1923572af
+2024-08-17 16:49:27.045 | INFO     | client:new_page:70 - Page bbbbbbbbb created successfully at https://www.notion.so/bbbbbbbbb-825cdd0adbe247e1a48e84415babbd43
+2024-08-17 16:49:27.616 | INFO     | __main__:<module>:17 - END
+2024-08-17 16:55:10.940 | INFO     | __main__:<module>:6 - starting
+2024-08-17 16:55:10.940 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 16:55:11.672 | ERROR    | __main__:<module>:13 - 'function' object has no attribute 'get'
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/source/main.py", line 8, in <module>
+    client = Client("22ee7b2c71ce4331a690d2bc9a1fd976")
+             └ <class 'client.Client'>
+
+  File "/home/lusca/projetos/notion-auto/source/client.py", line 13, in __init__
+    self.home = self.get_page_by_id(home_id)
+    │           │    │              └ '22ee7b2c71ce4331a690d2bc9a1fd976'
+    │           │    └ <function Client.get_page_by_id at 0x701b55561a20>
+    │           └ <client.Client object at 0x701b55523cd0>
+    └ <client.Client object at 0x701b55523cd0>
+
+  File "/home/lusca/projetos/notion-auto/source/client.py", line 41, in get_page_by_id
+    return Page(page_title, page_icon, page_root, response)
+           │    │           │          │          └ <Response [200]>
+           │    │           │          └ {'type': 'workspace', 'workspace': True}
+           │    │           └ None
+           │    └ 'test'
+           └ <class 'pages.Page'>
+
+  File "/home/lusca/projetos/notion-auto/source/pages.py", line 31, in __init__
+    self.subpages = response.json.get('child_page')
+    │               │        └ <function Response.json at 0x701b5553b490>
+    │               └ <Response [200]>
+    └ <pages.Page object at 0x701b55523ee0>
+
+AttributeError: 'function' object has no attribute 'get'
+2024-08-17 16:55:11.684 | INFO     | __main__:<module>:15 - END
+2024-08-17 16:55:24.505 | INFO     | __main__:<module>:6 - starting
+2024-08-17 16:55:24.505 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 16:55:25.654 | INFO     | client:__init__:20 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 16:55:25.655 | INFO     | client:__init__:21 - CLIENT DONE
+2024-08-17 16:55:26.014 | INFO     | __main__:<module>:15 - END
+2024-08-17 16:57:13.553 | INFO     | __main__:<module>:6 - starting
+2024-08-17 16:57:13.553 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 16:57:13.944 | ERROR    | __main__:<module>:13 - get expected at least 1 argument, got 0
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/source/main.py", line 8, in <module>
+    client = Client("22ee7b2c71ce4331a690d2bc9a1fd976")
+             └ <class 'client.Client'>
+
+  File "/home/lusca/projetos/notion-auto/source/client.py", line 13, in __init__
+    self.home = self.get_page_by_id(home_id)
+    │           │    │              └ '22ee7b2c71ce4331a690d2bc9a1fd976'
+    │           │    └ <function Client.get_page_by_id at 0x789d2d805ab0>
+    │           └ <client.Client object at 0x789d2d7c7ca0>
+    └ <client.Client object at 0x789d2d7c7ca0>
+
+  File "/home/lusca/projetos/notion-auto/source/client.py", line 41, in get_page_by_id
+    return Page(page_title, page_icon, page_root, response)
+           │    │           │          │          └ <Response [200]>
+           │    │           │          └ {'type': 'workspace', 'workspace': True}
+           │    │           └ None
+           │    └ 'test'
+           └ <class 'pages.Page'>
+
+  File "/home/lusca/projetos/notion-auto/source/pages.py", line 32, in __init__
+    for key in response.json().get():
+               │        └ <function Response.json at 0x789d2d7df520>
+               └ <Response [200]>
+
+TypeError: get expected at least 1 argument, got 0
+2024-08-17 16:57:13.953 | INFO     | __main__:<module>:15 - END
+2024-08-17 16:58:17.532 | INFO     | __main__:<module>:6 - starting
+2024-08-17 16:58:17.532 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 16:58:23.315 | INFO     | client:__init__:20 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 16:58:23.316 | INFO     | client:__init__:21 - CLIENT DONE
+2024-08-17 16:58:23.734 | INFO     | __main__:<module>:15 - END
+2024-08-17 16:59:43.636 | INFO     | __main__:<module>:6 - starting
+2024-08-17 16:59:43.637 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 16:59:44.006 | INFO     | client:__init__:20 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 16:59:44.007 | INFO     | client:__init__:21 - CLIENT DONE
+2024-08-17 16:59:47.565 | INFO     | __main__:<module>:15 - END
+2024-08-17 17:00:14.310 | INFO     | __main__:<module>:6 - starting
+2024-08-17 17:00:14.310 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 17:00:15.161 | INFO     | client:__init__:20 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 17:00:15.162 | INFO     | client:__init__:21 - CLIENT DONE
+2024-08-17 17:00:15.582 | INFO     | __main__:<module>:15 - END
+2024-08-17 17:01:39.398 | INFO     | __main__:<module>:6 - starting
+2024-08-17 17:01:39.399 | INFO     | client:__init__:10 - STARTING CLIENT
+2024-08-17 17:01:40.124 | INFO     | client:__init__:20 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 17:01:40.125 | INFO     | client:__init__:21 - CLIENT DONE
+2024-08-17 17:01:40.637 | INFO     | __main__:<module>:15 - END
+2024-08-17 19:10:37.781 | INFO     | __main__:<module>:6 - starting
+2024-08-17 19:10:37.781 | INFO     | client:__init__:11 - STARTING CLIENT
+2024-08-17 19:10:38.467 | INFO     | client:__init__:21 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-17 19:10:38.468 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-17 19:10:38.979 | INFO     | __main__:<module>:15 - END
+2024-08-17 19:13:13.578 | INFO     | __main__:<module>:6 - starting
+2024-08-17 19:13:13.578 | INFO     | client:__init__:11 - STARTING CLIENT
+2024-08-17 19:13:13.579 | ERROR    | __main__:<module>:13 - 'Client' object has no attribute 'headers'
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/source/main.py", line 8, in <module>
+    client = Client("22ee7b2c71ce4331a690d2bc9a1fd976")
+             └ <class 'client.Client'>
+
+  File "/home/lusca/projetos/notion-auto/source/client.py", line 14, in __init__
+    self.home = self.get_page_by_id(home_id)
+    │           │    │              └ '22ee7b2c71ce4331a690d2bc9a1fd976'
+    │           │    └ <function Client.get_page_by_id at 0x75e8caccfc70>
+    │           └ <client.Client object at 0x75e8caea7130>
+    └ <client.Client object at 0x75e8caea7130>
+
+  File "/home/lusca/projetos/notion-auto/source/client.py", line 30, in get_page_by_id
+    response = get(url, headers=self.headers)
+               │   │            └ <client.Client object at 0x75e8caea7130>
+               │   └ 'https://api.notion.com/v1/pages/22ee7b2c71ce4331a690d2bc9a1fd976'
+               └ <function get at 0x75e8caccf5b0>
+
+AttributeError: 'Client' object has no attribute 'headers'
+2024-08-17 19:13:13.581 | INFO     | __main__:<module>:15 - END
