@@ -24,11 +24,19 @@ def extract_text_formatting(text) -> list:
 class Page():
     def __init__(self, title:str, emoji:str, root:str, response:Response):
         self.title = title
+        self.emoji = emoji
+        self.root = root
         self.PAGE_URL = response.json().get('url')
         self.PAGE_ID = self.PAGE_URL.split('-')[-1]
-        self.root = root
-        emoji = emojize(emoji)
+        
+        
     
+    def __str__(self) -> str:
+        return f"{self.title}, {self.PAGE_URL}, {self.emoji}, {self.root}"
+    
+
+    
+
     def add_heading(self, text:str, level:int, is_toggleable:bool):
         self.headers = {
             "Authorization": f"Bearer {getenv('NOTION_TOKEN')}",
