@@ -1,9 +1,9 @@
 from json import dumps
-from loguru import logger
 from requests import Response, patch, get
 from os import getenv
+from re import findall
+from loguru import logger
 from config import *
-import re
 
 class Page():
     def __init__(self, title:str, emoji:str, root:str, response:Response):
@@ -134,7 +134,7 @@ class Page():
 def extract_text_formatting(text) -> list:
     result = []
     pattern = r'\*\*\*(.*?)\*\*\*|\*\*(.*?)\*\*|\*(.*?)\*|(.+?(?=\*\*\*|\*\*|\*|$))'
-    matches = re.findall(pattern, text)
+    matches = findall(pattern, text)
 
     for bold_italic, bold, italic, normal in matches:
         if bold_italic:
