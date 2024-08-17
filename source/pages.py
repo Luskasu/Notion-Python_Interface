@@ -16,6 +16,8 @@ class Page():
         self.title = title
         self.emoji = emoji
         self.root = root
+        self.emoji = emoji
+        self.root = root
         self.PAGE_URL = response.json().get('url')
         self.PAGE_ID = self.PAGE_URL.split('-')[-1]
         self.subpages = response.json().get('child_page')

@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from loguru import logger
 from pages import Page
 from requests import post, get
+from requests import post, get
 from json import dumps
 from config import *
 
@@ -39,6 +40,7 @@ class Client():
     def new_page(self, title:str, emoji:str, root:str="") -> Page:
         url = f"{NOTION_BASE_URL}/pages"
         if root == "":
+            root = self.home.PAGE_ID
             root = self.home.PAGE_ID
 
         data = {
