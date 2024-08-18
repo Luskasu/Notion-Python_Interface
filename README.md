@@ -8,7 +8,7 @@ Notion Python Interface is a python client to insteract with Notion API. It allo
 - Add headers, paragraph, banners and some comming soon text blocks in a page
 - Manage children pages
 - Markdown formating support
-- intgrated Loguru's logs
+- integrated Loguru's logs
 
 ## Installing
 
