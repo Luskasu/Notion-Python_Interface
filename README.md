@@ -1,6 +1,6 @@
 # Notion Python Interface
-
-a python client to insteract with Notion API. It allows to create and manage pages and taxt blocks in notion through python scripts. It was my first rest api project, and it is still in development! However, fell free to download and test as you like
+![Notion](https://img.shields.io/badge/-Notion-333333?style=flat&logo=notion) ![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)<br>
+Notion Python Interface is a python client to insteract with Notion API. It allows to create and manage pages and taxt blocks in notion through python scripts. It was my first rest api project, and it is still in development! However, fell free to download and test as you like
 
 ## Features
 
