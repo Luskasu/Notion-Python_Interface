@@ -6,9 +6,10 @@ if __name__ == '__main__':
     logger.info("starting")
     try:
         client = Client("22ee7b2c71ce4331a690d2bc9a1fd976")
-        a = client.get_page_by_id("f6afed2a091f45cc92f303c1923572af")
-        print(a.subpages)
-        
+        data_classe_test = client.get_page_by_id("33217aca5b6f4eb6b91a010e4ca11a00")
+        sub = data_classe_test.get_all_subpages()
+        print(sub.get("aaaaaa"))
+
     except Exception as e:
         logger.exception(e)
     finally:
