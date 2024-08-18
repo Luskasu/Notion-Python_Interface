@@ -5,10 +5,12 @@ if __name__ == '__main__':
     logger.add("logs/main.log", rotation="12:00", retention="10 days")
     logger.info("starting")
     try:
-        client = Client("22ee7b2c71ce4331a690d2bc9a1fd976")
-        data_classe_test = client.get_page_by_id("33217aca5b6f4eb6b91a010e4ca11a00")
-        sub = data_classe_test.get_all_subpages()
-        print(sub.get("aaaaaa"))
+        client = Client("eb0732ffc77245039cff079d5e179cb8")
+        sub = client.home.get_all_subpages()
+        
+        for element in sub.items():
+            print(element)
+
 
     except Exception as e:
         logger.exception(e)

@@ -29,12 +29,15 @@ class Page:
     def __str__(self) -> str:
         return f"{self.title}, {self.page_url}, {self.icon}, {self.root}"
 
-    def get_all_subpages(self) -> list:
+    
+
+    def get_all_subpages(self) -> dict:
         all_subpages = {}
         blocks = self.get_all_blocks()
         
+
         for block in blocks:
-            if block.get("has_children"):
+            if block.get('type') == 'child_page':
                 all_subpages.update({block.get('child_page').get('title') : block.get('id')})
         
         return all_subpages
@@ -143,6 +146,9 @@ class Page:
 
         return response
 
+
+
+
 def extract_text_formatting(text) -> list:
     result = []
     pattern = r'\*\*\*(.*?)\*\*\*|\*\*(.*?)\*\*|\*(.*?)\*|(.+?(?=\*\*\*|\*\*|\*|$))'
@@ -157,4 +163,5 @@ def extract_text_formatting(text) -> list:
             result.append(["italic", italic])
         elif normal:
             result.append(["normal", normal])
+
     return result

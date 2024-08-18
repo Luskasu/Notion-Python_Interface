@@ -46,3 +46,801 @@
  (id 22ee7b2c71ce4331a690d2bc9a1fd976)
 2024-08-18 14:13:55.403 | INFO     | client:__init__:25 - CLIENT DONE
 2024-08-18 14:13:56.396 | INFO     | __main__:<module>:16 - END
+2024-08-18 16:32:17.598 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:32:17.598 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:32:18.577 | ERROR    | __main__:<module>:13 - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 8, in <module>
+    client = Client("eb0732ffc77245039cff079d5e179cb8")
+             └ <class 'client.Client'>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 20, in __init__
+    self.home = self.get_page_by_id(home_id)
+    │           │    │              └ 'eb0732ffc77245039cff079d5e179cb8'
+    │           │    └ <function Client.get_page_by_id at 0x7b0010d4da20>
+    │           └ <client.Client object at 0x7b0010d51330>
+    └ <client.Client object at 0x7b0010d51330>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 31, in get_page_by_id
+    page_title = page_title["title"]["title"][0]["text"]["content"]
+                 └ None
+
+TypeError: 'NoneType' object is not subscriptable
+2024-08-18 16:32:18.584 | INFO     | __main__:<module>:15 - END
+2024-08-18 16:35:45.257 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:35:45.258 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:35:45.843 | ERROR    | __main__:<module>:13 - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 8, in <module>
+    client = Client("eb0732ffc77245039cff079d5e179cb8")
+             └ <class 'client.Client'>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 20, in __init__
+    self.home = self.get_page_by_id(home_id)
+    │           │    │              └ 'eb0732ffc77245039cff079d5e179cb8'
+    │           │    └ <function Client.get_page_by_id at 0x7990a1619bd0>
+    │           └ <client.Client object at 0x7990a161d2a0>
+    └ <client.Client object at 0x7990a161d2a0>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 31, in get_page_by_id
+    page_title = page_title["title"]["title"][0]["text"]["content"]
+                 └ None
+
+TypeError: 'NoneType' object is not subscriptable
+2024-08-18 16:35:45.850 | INFO     | __main__:<module>:15 - END
+2024-08-18 16:37:24.967 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:37:24.967 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:37:27.734 | INFO     | client:__init__:21 - client home defined to page test at url https://www.notion.so/test-22ee7b2c71ce4331a690d2bc9a1fd976
+ (id 22ee7b2c71ce4331a690d2bc9a1fd976)
+2024-08-18 16:37:27.735 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:37:29.067 | INFO     | __main__:<module>:15 - END
+2024-08-18 16:38:08.481 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:38:08.481 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:38:09.541 | ERROR    | __main__:<module>:10 - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 8, in <module>
+    client = Client("eb0732ffc77245039cff079d5e179cb8")
+             └ <class 'client.Client'>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 20, in __init__
+    self.home = self.get_page_by_id(home_id)
+    │           │    │              └ 'eb0732ffc77245039cff079d5e179cb8'
+    │           │    └ <function Client.get_page_by_id at 0x7206aca95bd0>
+    │           └ <client.Client object at 0x7206acc5be80>
+    └ <client.Client object at 0x7206acc5be80>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 31, in get_page_by_id
+    page_title = page_title["title"]["title"][0]["text"]["content"]
+                 └ None
+
+TypeError: 'NoneType' object is not subscriptable
+2024-08-18 16:38:09.552 | INFO     | __main__:<module>:12 - END
+2024-08-18 16:39:05.278 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:39:05.278 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:39:05.735 | ERROR    | __main__:<module>:10 - 'NoneType' object has no attribute 'split'
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 8, in <module>
+    client = Client("eb0732ffc77245039cff079d5e179cb8")
+             └ <class 'client.Client'>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 20, in __init__
+    self.home = self.get_page_by_id(home_id)
+    │           │    │              └ 'eb0732ffc77245039cff079d5e179cb8'
+    │           │    └ <function Client.get_page_by_id at 0x781749895ab0>
+    │           └ <client.Client object at 0x781749a5fdf0>
+    └ <client.Client object at 0x781749a5fdf0>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 33, in get_page_by_id
+    return Page(page_title, page_icon, page_root, response)
+           │    │           │          │          └ <Response [404]>
+           │    │           │          └ None
+           │    │           └ None
+           │    └ None
+           └ <class 'pages.Page'>
+
+  File "<string>", line 7, in __init__
+
+  File "/home/lusca/projetos/notion-auto/src/pages.py", line 27, in __post_init__
+    self.page_id = self.page_url.split('-')[-1]
+    │              │    └ None
+    │              └ <unprintable Page object>
+    └ <unprintable Page object>
+
+AttributeError: 'NoneType' object has no attribute 'split'
+2024-08-18 16:39:05.742 | INFO     | __main__:<module>:12 - END
+2024-08-18 16:40:26.930 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:40:26.931 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:40:27.278 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:40:27.279 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:40:27.280 | INFO     | __main__:<module>:12 - END
+2024-08-18 16:42:38.513 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:42:38.514 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:42:39.453 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:42:39.453 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:42:40.479 | ERROR    | __main__:<module>:15 - 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 9, in <module>
+    pgs = client.home.get_all_subpages()
+          │      │    └ <function Page.get_all_subpages at 0x70cf37a455a0>
+          │      └ <unprintable Page object>
+          └ <client.Client object at 0x70cf37a48b50>
+
+  File "/home/lusca/projetos/notion-auto/src/pages.py", line 38, in get_all_subpages
+    all_subpages.update({block.get('child_page').get('title') : block.get('id')})
+    │            │       │     │                                │     └ <method 'get' of 'dict' objects>
+    │            │       │     │                                └ {'object': 'block', 'id': '2cc5becd-5f9e-4c7e-9030-d8c76eee470e', 'parent': {'type': 'page_id', 'page_id': 'eb0732ff-c772-450...
+    │            │       │     └ <method 'get' of 'dict' objects>
+    │            │       └ {'object': 'block', 'id': '2cc5becd-5f9e-4c7e-9030-d8c76eee470e', 'parent': {'type': 'page_id', 'page_id': 'eb0732ff-c772-450...
+    │            └ <method 'update' of 'dict' objects>
+    └ {'Raças Padrão do Império de Jade': '57b59bd0-9cdd-451f-838a-062201c6dff8', 'Daihenge 大変化': 'e541a72f-9445-4453-b2d6-569f7db4...
+
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-18 16:42:40.484 | INFO     | __main__:<module>:17 - END
+2024-08-18 16:46:35.009 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:46:35.009 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:46:35.595 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:46:35.596 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:46:37.567 | ERROR    | __main__:<module>:15 - 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 9, in <module>
+    pgs = client.home.get_all_subpages()
+          │      │    └ <function Page.get_all_subpages at 0x7b988a8115a0>
+          │      └ <unprintable Page object>
+          └ <client.Client object at 0x7b988a8152d0>
+
+  File "/home/lusca/projetos/notion-auto/src/pages.py", line 38, in get_all_subpages
+    all_subpages.update({block.get('child_page').get('title') : block.get('id')})
+    │            │       │     │                                │     └ <method 'get' of 'dict' objects>
+    │            │       │     │                                └ {'object': 'block', 'id': '2cc5becd-5f9e-4c7e-9030-d8c76eee470e', 'parent': {'type': 'page_id', 'page_id': 'eb0732ff-c772-450...
+    │            │       │     └ <method 'get' of 'dict' objects>
+    │            │       └ {'object': 'block', 'id': '2cc5becd-5f9e-4c7e-9030-d8c76eee470e', 'parent': {'type': 'page_id', 'page_id': 'eb0732ff-c772-450...
+    │            └ <method 'update' of 'dict' objects>
+    └ {'Raças Padrão do Império de Jade': '57b59bd0-9cdd-451f-838a-062201c6dff8', 'Daihenge 大変化': 'e541a72f-9445-4453-b2d6-569f7db4...
+
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-18 16:46:37.572 | INFO     | __main__:<module>:17 - END
+2024-08-18 16:47:37.680 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:47:37.680 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:47:38.163 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:47:38.164 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:47:38.900 | ERROR    | __main__:<module>:15 - 'list' object has no attribute 'keys'
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 11, in <module>
+    for p in pgs.keys():
+             └ [{'object': 'block', 'id': 'ba67f922-284a-4218-b0b9-6e6af0b41b68', 'parent': {'type': 'page_id', 'page_id': 'eb0732ff-c772-45...
+
+AttributeError: 'list' object has no attribute 'keys'
+2024-08-18 16:47:38.905 | INFO     | __main__:<module>:17 - END
+2024-08-18 16:48:09.009 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:48:09.010 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:48:09.600 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:48:09.601 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:48:10.324 | INFO     | __main__:<module>:15 - END
+2024-08-18 16:48:57.933 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:48:57.933 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:48:58.551 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:48:58.552 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:48:59.226 | INFO     | __main__:<module>:16 - END
+2024-08-18 16:49:28.806 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:49:28.806 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:49:29.169 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:49:29.170 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:49:29.992 | INFO     | __main__:<module>:16 - END
+2024-08-18 16:49:52.446 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:49:52.446 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:49:52.823 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:49:52.824 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:49:53.748 | INFO     | __main__:<module>:16 - END
+2024-08-18 16:50:33.628 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:50:33.628 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:50:34.298 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:50:34.298 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:50:35.021 | ERROR    | __main__:<module>:14 - 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 9, in <module>
+    pgs = client.home.get_all_subpages()
+          │      │    └ <function Page.get_all_subpages at 0x7338c50bd5a0>
+          │      └ <unprintable Page object>
+          └ <client.Client object at 0x7338c50c0be0>
+
+  File "/home/lusca/projetos/notion-auto/src/pages.py", line 38, in get_all_subpages
+    all_subpages.update({block.get('child_page').get('title') : block.get('id')})
+    │            │       │     │                                │     └ <method 'get' of 'dict' objects>
+    │            │       │     │                                └ {'object': 'block', 'id': '2cc5becd-5f9e-4c7e-9030-d8c76eee470e', 'parent': {'type': 'page_id', 'page_id': 'eb0732ff-c772-450...
+    │            │       │     └ <method 'get' of 'dict' objects>
+    │            │       └ {'object': 'block', 'id': '2cc5becd-5f9e-4c7e-9030-d8c76eee470e', 'parent': {'type': 'page_id', 'page_id': 'eb0732ff-c772-450...
+    │            └ <method 'update' of 'dict' objects>
+    └ {'Raças Padrão do Império de Jade': '57b59bd0-9cdd-451f-838a-062201c6dff8', 'Daihenge 大変化': 'e541a72f-9445-4453-b2d6-569f7db4...
+
+AttributeError: 'NoneType' object has no attribute 'get'
+2024-08-18 16:50:35.026 | INFO     | __main__:<module>:16 - END
+2024-08-18 16:52:49.981 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:52:49.981 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:52:50.490 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:52:50.491 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:52:51.075 | INFO     | __main__:<module>:16 - END
+2024-08-18 16:53:29.110 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:53:29.110 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:54:29.614 | ERROR    | __main__:<module>:14 - Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+
+  File "/home/lusca/projetos/notion-auto/.venv/lib/python3.10/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           │           │     │    │       └ {}
+           │           │     │    └ <property object at 0x77757188c220>
+           │           │     └ <Response [504]>
+           │           └ <function loads at 0x777571e6ad40>
+           └ <module 'json' from '/usr/lib/python3.10/json/__init__.py'>
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           │                │      └ '<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</...
+           │                └ <function JSONDecoder.decode at 0x777571e6a5f0>
+           └ <json.decoder.JSONDecoder object at 0x777571e6cb80>
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               │    │          │      │  └ '<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</...
+               │    │          │      └ <built-in method match of re.Pattern object at 0x777571fd9700>
+               │    │          └ '<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</...
+               │    └ <function JSONDecoder.raw_decode at 0x777571e6a680>
+               └ <json.decoder.JSONDecoder object at 0x777571e6cb80>
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+          │                                  └ '<html>\r\n<head><title>504 Gateway Time-out</title></head>\r\n<body>\r\n<center><h1>504 Gateway Time-out</h1></center>\r\n</...
+          └ <class 'json.decoder.JSONDecodeError'>
+
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 8, in <module>
+    client = Client("eb0732ffc77245039cff079d5e179cb8")
+             └ <class 'client.Client'>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 20, in __init__
+    self.home = self.get_page_by_id(home_id)
+    │           │    │              └ 'eb0732ffc77245039cff079d5e179cb8'
+    │           │    └ <function Client.get_page_by_id at 0x777571899bd0>
+    │           └ <client.Client object at 0x77757189cb50>
+    └ <client.Client object at 0x77757189cb50>
+
+  File "/home/lusca/projetos/notion-auto/src/client.py", line 28, in get_page_by_id
+    page_icon = response.json().get("icon")
+                │        └ <function Response.json at 0x777571889630>
+                └ <Response [504]>
+
+  File "/home/lusca/projetos/notion-auto/.venv/lib/python3.10/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+          └ <class 'requests.exceptions.JSONDecodeError'>
+
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2024-08-18 16:54:29.625 | INFO     | __main__:<module>:16 - END
+2024-08-18 16:57:40.391 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:57:40.392 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:57:40.897 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:57:40.898 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:57:41.515 | INFO     | __main__:<module>:16 - END
+2024-08-18 16:58:05.158 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:58:05.158 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:58:05.678 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:58:05.678 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:58:06.415 | INFO     | __main__:<module>:18 - END
+2024-08-18 16:58:26.743 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:58:26.743 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:58:27.190 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:58:27.191 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:58:27.737 | INFO     | __main__:<module>:11 - <class 'dict'>
+2024-08-18 16:58:27.738 | INFO     | __main__:<module>:18 - END
+2024-08-18 16:59:06.335 | INFO     | __main__:<module>:6 - starting
+2024-08-18 16:59:06.336 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 16:59:06.811 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 16:59:06.812 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 16:59:07.763 | INFO     | __main__:<module>:16 - END
+2024-08-18 17:00:42.684 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:00:42.684 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:00:44.194 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:00:44.195 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:00:45.119 | INFO     | __main__:<module>:16 - END
+2024-08-18 17:00:51.274 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:00:51.275 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:00:51.875 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:00:51.876 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:00:53.311 | INFO     | __main__:<module>:16 - END
+2024-08-18 17:01:27.583 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:01:27.584 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:01:28.227 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:01:28.228 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:01:29.254 | INFO     | __main__:<module>:16 - END
+2024-08-18 17:02:07.882 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:02:07.882 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:02:08.472 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:02:08.473 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:02:09.193 | INFO     | __main__:<module>:17 - END
+2024-08-18 17:03:23.587 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:03:23.587 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:03:24.659 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:03:24.660 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:03:25.581 | INFO     | __main__:<module>:17 - END
+2024-08-18 17:03:51.641 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:03:51.641 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:03:52.204 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:03:52.205 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:03:52.953 | INFO     | __main__:<module>:12 - ---------- 57b59bd0-9cdd-451f-838a-062201c6dff8
+2024-08-18 17:03:52.954 | INFO     | __main__:<module>:12 - ---------- e541a72f-9445-4453-b2d6-569f7db41190
+2024-08-18 17:03:52.954 | INFO     | __main__:<module>:12 - ---------- f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44
+2024-08-18 17:03:52.954 | INFO     | __main__:<module>:12 - ---------- 50ba717b-d3be-433e-b951-30e8e288b890
+2024-08-18 17:03:52.954 | INFO     | __main__:<module>:12 - ---------- 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1
+2024-08-18 17:03:52.954 | INFO     | __main__:<module>:12 - ---------- ac8f7712-c5f9-4c78-8ba8-ed8322811207
+2024-08-18 17:03:52.954 | INFO     | __main__:<module>:12 - ---------- 6e4881a6-981d-4483-9c4e-29d0fff1a630
+2024-08-18 17:03:52.954 | INFO     | __main__:<module>:12 - ---------- f5bd9aac-3789-47c7-ad72-4af012c71398
+2024-08-18 17:03:52.955 | INFO     | __main__:<module>:12 - ---------- d33e542e-135a-4d9f-b2cf-f6210a5e2100
+2024-08-18 17:03:52.955 | INFO     | __main__:<module>:12 - ---------- 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8
+2024-08-18 17:03:52.955 | INFO     | __main__:<module>:12 - ---------- d75ef16b-a42e-4736-909f-3b248723b420
+2024-08-18 17:03:52.955 | INFO     | __main__:<module>:12 - ---------- d7165302-855b-460c-9ee6-abd6aca65025
+2024-08-18 17:03:52.955 | INFO     | __main__:<module>:12 - ---------- c31c47d1-6de2-4789-8728-09508c329cab
+2024-08-18 17:03:52.955 | INFO     | __main__:<module>:12 - ---------- bdbc1c05-8f37-4587-9fc2-83e0235e843d
+2024-08-18 17:03:52.956 | INFO     | __main__:<module>:12 - ---------- 135005cf-1bc8-4607-9330-e94b1a49d638
+2024-08-18 17:03:52.956 | INFO     | __main__:<module>:12 - ---------- b8f64d18-3ac2-4746-aa3f-881960495372
+2024-08-18 17:03:52.956 | INFO     | __main__:<module>:12 - ---------- 33c8c1d7-5db8-437f-92d2-c3b6f22a554b
+2024-08-18 17:03:52.956 | INFO     | __main__:<module>:12 - ---------- 60c36ae9-c28e-472c-abf9-cf43787c466d
+2024-08-18 17:03:52.956 | INFO     | __main__:<module>:12 - ---------- d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6
+2024-08-18 17:03:52.956 | INFO     | __main__:<module>:12 - ---------- cb1f660e-a583-4793-b67d-2facdd6e5b90
+2024-08-18 17:03:52.956 | INFO     | __main__:<module>:12 - ---------- 1511645a-ed75-4894-8da8-2947dc29f4ca
+2024-08-18 17:03:52.957 | INFO     | __main__:<module>:12 - ---------- 9d344880-8ca9-40fa-920c-abfb4736c155
+2024-08-18 17:03:52.957 | INFO     | __main__:<module>:12 - ---------- 2cc5becd-5f9e-4c7e-9030-d8c76eee470e
+2024-08-18 17:03:52.957 | INFO     | __main__:<module>:12 - ---------- 580bf2d1-2163-4337-968a-e54cb55e1c38
+2024-08-18 17:03:52.957 | INFO     | __main__:<module>:12 - ---------- 4bce3666-2bc3-4b3b-93c5-453b94d790c9
+2024-08-18 17:03:52.957 | INFO     | __main__:<module>:12 - ---------- eebbe4e7-aa44-4bd4-bf1e-c78020238f3d
+2024-08-18 17:03:52.957 | INFO     | __main__:<module>:12 - ---------- 9e1f5e58-8289-4d5c-b05e-164057b8e587
+2024-08-18 17:03:52.957 | INFO     | __main__:<module>:12 - ---------- 57bab793-b252-411b-865e-d2ebd477019e
+2024-08-18 17:03:52.957 | INFO     | __main__:<module>:12 - ---------- 7a6ca5eb-c7aa-4b5b-8e9d-f517231cba49
+2024-08-18 17:03:52.958 | INFO     | __main__:<module>:12 - ---------- bf5f68ab-225c-4292-9fe9-069d39e6c181
+2024-08-18 17:03:52.958 | INFO     | __main__:<module>:12 - ---------- 127ad997-3b19-4a15-81a9-355158ffb9e4
+2024-08-18 17:03:52.958 | INFO     | __main__:<module>:12 - ---------- 8894fd3d-f1f5-448d-9c90-0408f0ee3661
+2024-08-18 17:03:52.958 | INFO     | __main__:<module>:12 - ---------- 1211541f-2c8d-4cdf-b680-067fe0e0e20d
+2024-08-18 17:03:52.958 | INFO     | __main__:<module>:12 - ---------- 13e0cf08-6929-46a4-8203-58e40b5d3a83
+2024-08-18 17:03:52.958 | INFO     | __main__:<module>:12 - ---------- e6143734-c061-499e-a494-cd34647a74ee
+2024-08-18 17:03:52.958 | INFO     | __main__:<module>:12 - ---------- 46cb8bda-4e1c-4098-ae01-5f85b277e6c4
+2024-08-18 17:03:52.959 | INFO     | __main__:<module>:18 - END
+2024-08-18 17:12:54.868 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:12:54.869 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:12:55.549 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:12:55.550 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:12:56.574 | INFO     | __main__:<module>:12 - trying for -------- id: 57b59bd0-9cdd-451f-838a-062201c6dff8, name: child_page
+2024-08-18 17:12:56.574 | INFO     | __main__:<module>:12 - trying for -------- id: e541a72f-9445-4453-b2d6-569f7db41190, name: child_page
+2024-08-18 17:12:56.575 | INFO     | __main__:<module>:12 - trying for -------- id: f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44, name: child_page
+2024-08-18 17:12:56.575 | INFO     | __main__:<module>:12 - trying for -------- id: 50ba717b-d3be-433e-b951-30e8e288b890, name: child_page
+2024-08-18 17:12:56.575 | INFO     | __main__:<module>:12 - trying for -------- id: 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1, name: child_page
+2024-08-18 17:12:56.575 | INFO     | __main__:<module>:12 - trying for -------- id: ac8f7712-c5f9-4c78-8ba8-ed8322811207, name: child_page
+2024-08-18 17:12:56.576 | INFO     | __main__:<module>:12 - trying for -------- id: 6e4881a6-981d-4483-9c4e-29d0fff1a630, name: child_page
+2024-08-18 17:12:56.576 | INFO     | __main__:<module>:12 - trying for -------- id: f5bd9aac-3789-47c7-ad72-4af012c71398, name: child_page
+2024-08-18 17:12:56.576 | INFO     | __main__:<module>:12 - trying for -------- id: d33e542e-135a-4d9f-b2cf-f6210a5e2100, name: child_page
+2024-08-18 17:12:56.577 | INFO     | __main__:<module>:12 - trying for -------- id: 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8, name: child_page
+2024-08-18 17:12:56.577 | INFO     | __main__:<module>:12 - trying for -------- id: d75ef16b-a42e-4736-909f-3b248723b420, name: child_page
+2024-08-18 17:12:56.577 | INFO     | __main__:<module>:12 - trying for -------- id: d7165302-855b-460c-9ee6-abd6aca65025, name: child_page
+2024-08-18 17:12:56.577 | INFO     | __main__:<module>:12 - trying for -------- id: c31c47d1-6de2-4789-8728-09508c329cab, name: child_page
+2024-08-18 17:12:56.577 | INFO     | __main__:<module>:12 - trying for -------- id: bdbc1c05-8f37-4587-9fc2-83e0235e843d, name: child_page
+2024-08-18 17:12:56.577 | INFO     | __main__:<module>:12 - trying for -------- id: 135005cf-1bc8-4607-9330-e94b1a49d638, name: child_page
+2024-08-18 17:12:56.578 | INFO     | __main__:<module>:12 - trying for -------- id: b8f64d18-3ac2-4746-aa3f-881960495372, name: child_page
+2024-08-18 17:12:56.578 | INFO     | __main__:<module>:12 - trying for -------- id: 33c8c1d7-5db8-437f-92d2-c3b6f22a554b, name: child_page
+2024-08-18 17:12:56.578 | INFO     | __main__:<module>:12 - trying for -------- id: 60c36ae9-c28e-472c-abf9-cf43787c466d, name: child_page
+2024-08-18 17:12:56.578 | INFO     | __main__:<module>:12 - trying for -------- id: d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6, name: child_page
+2024-08-18 17:12:56.578 | INFO     | __main__:<module>:12 - trying for -------- id: cb1f660e-a583-4793-b67d-2facdd6e5b90, name: child_page
+2024-08-18 17:12:56.578 | INFO     | __main__:<module>:12 - trying for -------- id: 1511645a-ed75-4894-8da8-2947dc29f4ca, name: child_page
+2024-08-18 17:12:56.578 | INFO     | __main__:<module>:12 - trying for -------- id: 9d344880-8ca9-40fa-920c-abfb4736c155, name: child_page
+2024-08-18 17:12:56.579 | INFO     | __main__:<module>:12 - trying for -------- id: 2cc5becd-5f9e-4c7e-9030-d8c76eee470e, name: column_list
+2024-08-18 17:12:56.579 | INFO     | __main__:<module>:12 - trying for -------- id: 580bf2d1-2163-4337-968a-e54cb55e1c38, name: child_page
+2024-08-18 17:12:56.579 | INFO     | __main__:<module>:12 - trying for -------- id: 4bce3666-2bc3-4b3b-93c5-453b94d790c9, name: child_page
+2024-08-18 17:12:56.579 | INFO     | __main__:<module>:12 - trying for -------- id: eebbe4e7-aa44-4bd4-bf1e-c78020238f3d, name: child_page
+2024-08-18 17:12:56.579 | INFO     | __main__:<module>:12 - trying for -------- id: 9e1f5e58-8289-4d5c-b05e-164057b8e587, name: child_page
+2024-08-18 17:12:56.579 | INFO     | __main__:<module>:12 - trying for -------- id: 57bab793-b252-411b-865e-d2ebd477019e, name: child_page
+2024-08-18 17:12:56.579 | INFO     | __main__:<module>:12 - trying for -------- id: 7a6ca5eb-c7aa-4b5b-8e9d-f517231cba49, name: child_page
+2024-08-18 17:12:56.580 | INFO     | __main__:<module>:12 - trying for -------- id: bf5f68ab-225c-4292-9fe9-069d39e6c181, name: child_page
+2024-08-18 17:12:56.580 | INFO     | __main__:<module>:12 - trying for -------- id: 127ad997-3b19-4a15-81a9-355158ffb9e4, name: child_page
+2024-08-18 17:12:56.580 | INFO     | __main__:<module>:12 - trying for -------- id: 8894fd3d-f1f5-448d-9c90-0408f0ee3661, name: child_page
+2024-08-18 17:12:56.580 | INFO     | __main__:<module>:12 - trying for -------- id: 1211541f-2c8d-4cdf-b680-067fe0e0e20d, name: child_page
+2024-08-18 17:12:56.580 | INFO     | __main__:<module>:12 - trying for -------- id: 13e0cf08-6929-46a4-8203-58e40b5d3a83, name: child_page
+2024-08-18 17:12:56.580 | INFO     | __main__:<module>:12 - trying for -------- id: e6143734-c061-499e-a494-cd34647a74ee, name: child_page
+2024-08-18 17:12:56.581 | INFO     | __main__:<module>:12 - trying for -------- id: 46cb8bda-4e1c-4098-ae01-5f85b277e6c4, name: child_page
+2024-08-18 17:12:56.581 | INFO     | __main__:<module>:19 - END
+2024-08-18 17:13:47.853 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:13:47.853 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:13:48.943 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:13:48.943 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:13:49.614 | ERROR    | __main__:<module>:17 - 'dict' object has no attribute 'value'
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 12, in <module>
+    logger.info(f"trying for -------- id: {a.get('id')}, name: {a.get('child_page').value()}")
+    │      └ <function Logger.info at 0x7d1a1218e5f0>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='logs/main.log')]>
+
+AttributeError: 'dict' object has no attribute 'value'
+2024-08-18 17:13:49.621 | INFO     | __main__:<module>:19 - END
+2024-08-18 17:14:20.880 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:14:20.881 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:14:21.465 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:14:21.466 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:14:22.490 | INFO     | __main__:<module>:12 - trying for -------- id: 57b59bd0-9cdd-451f-838a-062201c6dff8, name: Raças Padrão do Império de Jade
+2024-08-18 17:14:22.491 | INFO     | __main__:<module>:12 - trying for -------- id: e541a72f-9445-4453-b2d6-569f7db41190, name: Daihenge 大変化
+2024-08-18 17:14:22.491 | INFO     | __main__:<module>:12 - trying for -------- id: f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44, name: Hantatsu 半竜
+2024-08-18 17:14:22.491 | INFO     | __main__:<module>:12 - trying for -------- id: 50ba717b-d3be-433e-b951-30e8e288b890, name: Kugutsu - 傀儡
+2024-08-18 17:14:22.492 | INFO     | __main__:<module>:12 - trying for -------- id: 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1, name: Meio Vanara
+2024-08-18 17:14:22.492 | INFO     | __main__:<module>:12 - trying for -------- id: ac8f7712-c5f9-4c78-8ba8-ed8322811207, name: Akuma 悪魔 - (Sulfures em Tamu-ra)
+2024-08-18 17:14:22.493 | INFO     | __main__:<module>:12 - trying for -------- id: 6e4881a6-981d-4483-9c4e-29d0fff1a630, name: Gyujin 牛人 -(Minotauros em Tamu-ra)
+2024-08-18 17:14:22.493 | INFO     | __main__:<module>:12 - trying for -------- id: f5bd9aac-3789-47c7-ad72-4af012c71398, name: Ten'nin 天人 (Aggelus em Tamu-ra)
+2024-08-18 17:14:22.493 | INFO     | __main__:<module>:12 - trying for -------- id: d33e542e-135a-4d9f-b2cf-f6210a5e2100, name: Yousei 妖精 - (Elfos em Tamu-ra)
+2024-08-18 17:14:22.493 | INFO     | __main__:<module>:12 - trying for -------- id: 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8, name: Kangoshi- 看護師
+2024-08-18 17:14:22.493 | INFO     | __main__:<module>:12 - trying for -------- id: d75ef16b-a42e-4736-909f-3b248723b420, name: Ryōrinin 料理人
+2024-08-18 17:14:22.493 | INFO     | __main__:<module>:12 - trying for -------- id: d7165302-855b-460c-9ee6-abd6aca65025, name: Ongakuka 音楽家
+2024-08-18 17:14:22.493 | INFO     | __main__:<module>:12 - trying for -------- id: c31c47d1-6de2-4789-8728-09508c329cab, name: Enjinia エンジニア
+2024-08-18 17:14:22.494 | INFO     | __main__:<module>:12 - trying for -------- id: bdbc1c05-8f37-4587-9fc2-83e0235e843d, name: Kyudoka
+2024-08-18 17:14:22.494 | INFO     | __main__:<module>:12 - trying for -------- id: 135005cf-1bc8-4607-9330-e94b1a49d638, name: Shinigami
+2024-08-18 17:14:22.494 | INFO     | __main__:<module>:12 - trying for -------- id: b8f64d18-3ac2-4746-aa3f-881960495372, name: Bonzo
+2024-08-18 17:14:22.494 | INFO     | __main__:<module>:12 - trying for -------- id: 33c8c1d7-5db8-437f-92d2-c3b6f22a554b, name: Senshi (Guerreiro) 戦士
+2024-08-18 17:14:22.494 | INFO     | __main__:<module>:12 - trying for -------- id: 60c36ae9-c28e-472c-abf9-cf43787c466d, name: Arte Espiritual
+2024-08-18 17:14:22.494 | INFO     | __main__:<module>:12 - trying for -------- id: d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6, name: Arte Suave
+2024-08-18 17:14:22.494 | INFO     | __main__:<module>:12 - trying for -------- id: cb1f660e-a583-4793-b67d-2facdd6e5b90, name: Onimisha Exterminador
+2024-08-18 17:14:22.495 | INFO     | __main__:<module>:12 - trying for -------- id: 1511645a-ed75-4894-8da8-2947dc29f4ca, name: Wu-Jen Específicos
+2024-08-18 17:14:22.495 | INFO     | __main__:<module>:12 - trying for -------- id: 9d344880-8ca9-40fa-920c-abfb4736c155, name: Samurai da Lâmina Solar
+2024-08-18 17:14:22.495 | ERROR    | __main__:<module>:17 - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 12, in <module>
+    logger.info(f"trying for -------- id: {a.get('id')}, name: {a.get('child_page')['title']}")
+    │      └ <function Logger.info at 0x7174e928e5f0>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='logs/main.log')]>
+
+TypeError: 'NoneType' object is not subscriptable
+2024-08-18 17:14:22.500 | INFO     | __main__:<module>:19 - END
+2024-08-18 17:35:08.107 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:35:08.108 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:35:08.805 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:35:08.805 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:35:09.566 | INFO     | __main__:<module>:14 - trying for -------- id: 57b59bd0-9cdd-451f-838a-062201c6dff8, name: Raças Padrão do Império de Jade
+2024-08-18 17:35:09.566 | INFO     | __main__:<module>:14 - trying for -------- id: e541a72f-9445-4453-b2d6-569f7db41190, name: Daihenge 大変化
+2024-08-18 17:35:09.567 | INFO     | __main__:<module>:14 - trying for -------- id: f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44, name: Hantatsu 半竜
+2024-08-18 17:35:09.567 | INFO     | __main__:<module>:14 - trying for -------- id: 50ba717b-d3be-433e-b951-30e8e288b890, name: Kugutsu - 傀儡
+2024-08-18 17:35:09.567 | INFO     | __main__:<module>:14 - trying for -------- id: 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1, name: Meio Vanara
+2024-08-18 17:35:09.567 | INFO     | __main__:<module>:14 - trying for -------- id: ac8f7712-c5f9-4c78-8ba8-ed8322811207, name: Akuma 悪魔 - (Sulfures em Tamu-ra)
+2024-08-18 17:35:09.568 | INFO     | __main__:<module>:14 - trying for -------- id: 6e4881a6-981d-4483-9c4e-29d0fff1a630, name: Gyujin 牛人 -(Minotauros em Tamu-ra)
+2024-08-18 17:35:09.568 | INFO     | __main__:<module>:14 - trying for -------- id: f5bd9aac-3789-47c7-ad72-4af012c71398, name: Ten'nin 天人 (Aggelus em Tamu-ra)
+2024-08-18 17:35:09.569 | INFO     | __main__:<module>:14 - trying for -------- id: d33e542e-135a-4d9f-b2cf-f6210a5e2100, name: Yousei 妖精 - (Elfos em Tamu-ra)
+2024-08-18 17:35:09.569 | INFO     | __main__:<module>:14 - trying for -------- id: 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8, name: Kangoshi- 看護師
+2024-08-18 17:35:09.569 | INFO     | __main__:<module>:14 - trying for -------- id: d75ef16b-a42e-4736-909f-3b248723b420, name: Ryōrinin 料理人
+2024-08-18 17:35:09.569 | INFO     | __main__:<module>:14 - trying for -------- id: d7165302-855b-460c-9ee6-abd6aca65025, name: Ongakuka 音楽家
+2024-08-18 17:35:09.569 | INFO     | __main__:<module>:14 - trying for -------- id: c31c47d1-6de2-4789-8728-09508c329cab, name: Enjinia エンジニア
+2024-08-18 17:35:09.570 | INFO     | __main__:<module>:14 - trying for -------- id: bdbc1c05-8f37-4587-9fc2-83e0235e843d, name: Kyudoka
+2024-08-18 17:35:09.570 | INFO     | __main__:<module>:14 - trying for -------- id: 135005cf-1bc8-4607-9330-e94b1a49d638, name: Shinigami
+2024-08-18 17:35:09.570 | INFO     | __main__:<module>:14 - trying for -------- id: b8f64d18-3ac2-4746-aa3f-881960495372, name: Bonzo
+2024-08-18 17:35:09.570 | INFO     | __main__:<module>:14 - trying for -------- id: 33c8c1d7-5db8-437f-92d2-c3b6f22a554b, name: Senshi (Guerreiro) 戦士
+2024-08-18 17:35:09.570 | INFO     | __main__:<module>:14 - trying for -------- id: 60c36ae9-c28e-472c-abf9-cf43787c466d, name: Arte Espiritual
+2024-08-18 17:35:09.570 | INFO     | __main__:<module>:14 - trying for -------- id: d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6, name: Arte Suave
+2024-08-18 17:35:09.570 | INFO     | __main__:<module>:14 - trying for -------- id: cb1f660e-a583-4793-b67d-2facdd6e5b90, name: Onimisha Exterminador
+2024-08-18 17:35:09.571 | INFO     | __main__:<module>:14 - trying for -------- id: 1511645a-ed75-4894-8da8-2947dc29f4ca, name: Wu-Jen Específicos
+2024-08-18 17:35:09.571 | INFO     | __main__:<module>:14 - trying for -------- id: 9d344880-8ca9-40fa-920c-abfb4736c155, name: Samurai da Lâmina Solar
+2024-08-18 17:35:09.571 | ERROR    | __main__:<module>:19 - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 12, in <module>
+    if a.get('child_page')['title'] is None:
+       │ └ <method 'get' of 'dict' objects>
+       └ {'object': 'block', 'id': '2cc5becd-5f9e-4c7e-9030-d8c76eee470e', 'parent': {'type': 'page_id', 'page_id': 'eb0732ff-c772-450...
+
+TypeError: 'NoneType' object is not subscriptable
+2024-08-18 17:35:09.577 | INFO     | __main__:<module>:21 - END
+2024-08-18 17:35:32.548 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:35:32.549 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:35:35.063 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:35:35.063 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:35:35.782 | INFO     | __main__:<module>:14 - trying for -------- id: 57b59bd0-9cdd-451f-838a-062201c6dff8, name: Raças Padrão do Império de Jade
+2024-08-18 17:35:35.782 | INFO     | __main__:<module>:14 - trying for -------- id: e541a72f-9445-4453-b2d6-569f7db41190, name: Daihenge 大変化
+2024-08-18 17:35:35.783 | INFO     | __main__:<module>:14 - trying for -------- id: f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44, name: Hantatsu 半竜
+2024-08-18 17:35:35.783 | INFO     | __main__:<module>:14 - trying for -------- id: 50ba717b-d3be-433e-b951-30e8e288b890, name: Kugutsu - 傀儡
+2024-08-18 17:35:35.783 | INFO     | __main__:<module>:14 - trying for -------- id: 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1, name: Meio Vanara
+2024-08-18 17:35:35.784 | INFO     | __main__:<module>:14 - trying for -------- id: ac8f7712-c5f9-4c78-8ba8-ed8322811207, name: Akuma 悪魔 - (Sulfures em Tamu-ra)
+2024-08-18 17:35:35.784 | INFO     | __main__:<module>:14 - trying for -------- id: 6e4881a6-981d-4483-9c4e-29d0fff1a630, name: Gyujin 牛人 -(Minotauros em Tamu-ra)
+2024-08-18 17:35:35.784 | INFO     | __main__:<module>:14 - trying for -------- id: f5bd9aac-3789-47c7-ad72-4af012c71398, name: Ten'nin 天人 (Aggelus em Tamu-ra)
+2024-08-18 17:35:35.784 | INFO     | __main__:<module>:14 - trying for -------- id: d33e542e-135a-4d9f-b2cf-f6210a5e2100, name: Yousei 妖精 - (Elfos em Tamu-ra)
+2024-08-18 17:35:35.785 | INFO     | __main__:<module>:14 - trying for -------- id: 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8, name: Kangoshi- 看護師
+2024-08-18 17:35:35.785 | INFO     | __main__:<module>:14 - trying for -------- id: d75ef16b-a42e-4736-909f-3b248723b420, name: Ryōrinin 料理人
+2024-08-18 17:35:35.785 | INFO     | __main__:<module>:14 - trying for -------- id: d7165302-855b-460c-9ee6-abd6aca65025, name: Ongakuka 音楽家
+2024-08-18 17:35:35.785 | INFO     | __main__:<module>:14 - trying for -------- id: c31c47d1-6de2-4789-8728-09508c329cab, name: Enjinia エンジニア
+2024-08-18 17:35:35.786 | INFO     | __main__:<module>:14 - trying for -------- id: bdbc1c05-8f37-4587-9fc2-83e0235e843d, name: Kyudoka
+2024-08-18 17:35:35.786 | INFO     | __main__:<module>:14 - trying for -------- id: 135005cf-1bc8-4607-9330-e94b1a49d638, name: Shinigami
+2024-08-18 17:35:35.786 | INFO     | __main__:<module>:14 - trying for -------- id: b8f64d18-3ac2-4746-aa3f-881960495372, name: Bonzo
+2024-08-18 17:35:35.786 | INFO     | __main__:<module>:14 - trying for -------- id: 33c8c1d7-5db8-437f-92d2-c3b6f22a554b, name: Senshi (Guerreiro) 戦士
+2024-08-18 17:35:35.787 | INFO     | __main__:<module>:14 - trying for -------- id: 60c36ae9-c28e-472c-abf9-cf43787c466d, name: Arte Espiritual
+2024-08-18 17:35:35.787 | INFO     | __main__:<module>:14 - trying for -------- id: d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6, name: Arte Suave
+2024-08-18 17:35:35.787 | INFO     | __main__:<module>:14 - trying for -------- id: cb1f660e-a583-4793-b67d-2facdd6e5b90, name: Onimisha Exterminador
+2024-08-18 17:35:35.787 | INFO     | __main__:<module>:14 - trying for -------- id: 1511645a-ed75-4894-8da8-2947dc29f4ca, name: Wu-Jen Específicos
+2024-08-18 17:35:35.788 | INFO     | __main__:<module>:14 - trying for -------- id: 9d344880-8ca9-40fa-920c-abfb4736c155, name: Samurai da Lâmina Solar
+2024-08-18 17:35:35.788 | ERROR    | __main__:<module>:19 - 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+
+> File "/home/lusca/projetos/notion-auto/src/main.py", line 12, in <module>
+    if a.get('child_page')['title'] is None:
+       │ └ <method 'get' of 'dict' objects>
+       └ {'object': 'block', 'id': '2cc5becd-5f9e-4c7e-9030-d8c76eee470e', 'parent': {'type': 'page_id', 'page_id': 'eb0732ff-c772-450...
+
+TypeError: 'NoneType' object is not subscriptable
+2024-08-18 17:35:35.794 | INFO     | __main__:<module>:21 - END
+2024-08-18 17:38:03.110 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:38:03.110 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:38:03.855 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:38:03.856 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:38:04.677 | INFO     | __main__:<module>:13 - 9 trying for ------- id: 57b59bd0-9cdd-451f-838a-062201c6dff8, name: Raças Padrão do Império de Jade
+2024-08-18 17:38:04.678 | INFO     | __main__:<module>:13 - 10 trying for ------- id: e541a72f-9445-4453-b2d6-569f7db41190, name: Daihenge 大変化
+2024-08-18 17:38:04.678 | INFO     | __main__:<module>:13 - 11 trying for ------- id: f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44, name: Hantatsu 半竜
+2024-08-18 17:38:04.678 | INFO     | __main__:<module>:13 - 12 trying for ------- id: 50ba717b-d3be-433e-b951-30e8e288b890, name: Kugutsu - 傀儡
+2024-08-18 17:38:04.679 | INFO     | __main__:<module>:13 - 13 trying for ------- id: 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1, name: Meio Vanara
+2024-08-18 17:38:04.679 | INFO     | __main__:<module>:13 - 16 trying for ------- id: ac8f7712-c5f9-4c78-8ba8-ed8322811207, name: Akuma 悪魔 - (Sulfures em Tamu-ra)
+2024-08-18 17:38:04.679 | INFO     | __main__:<module>:13 - 17 trying for ------- id: 6e4881a6-981d-4483-9c4e-29d0fff1a630, name: Gyujin 牛人 -(Minotauros em Tamu-ra)
+2024-08-18 17:38:04.679 | INFO     | __main__:<module>:13 - 18 trying for ------- id: f5bd9aac-3789-47c7-ad72-4af012c71398, name: Ten'nin 天人 (Aggelus em Tamu-ra)
+2024-08-18 17:38:04.679 | INFO     | __main__:<module>:13 - 19 trying for ------- id: d33e542e-135a-4d9f-b2cf-f6210a5e2100, name: Yousei 妖精 - (Elfos em Tamu-ra)
+2024-08-18 17:38:04.679 | INFO     | __main__:<module>:13 - 23 trying for ------- id: 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8, name: Kangoshi- 看護師
+2024-08-18 17:38:04.679 | INFO     | __main__:<module>:13 - 24 trying for ------- id: d75ef16b-a42e-4736-909f-3b248723b420, name: Ryōrinin 料理人
+2024-08-18 17:38:04.680 | INFO     | __main__:<module>:13 - 25 trying for ------- id: d7165302-855b-460c-9ee6-abd6aca65025, name: Ongakuka 音楽家
+2024-08-18 17:38:04.680 | INFO     | __main__:<module>:13 - 26 trying for ------- id: c31c47d1-6de2-4789-8728-09508c329cab, name: Enjinia エンジニア
+2024-08-18 17:38:04.680 | INFO     | __main__:<module>:13 - 27 trying for ------- id: bdbc1c05-8f37-4587-9fc2-83e0235e843d, name: Kyudoka
+2024-08-18 17:38:04.680 | INFO     | __main__:<module>:13 - 28 trying for ------- id: 135005cf-1bc8-4607-9330-e94b1a49d638, name: Shinigami
+2024-08-18 17:38:04.680 | INFO     | __main__:<module>:13 - 31 trying for ------- id: b8f64d18-3ac2-4746-aa3f-881960495372, name: Bonzo
+2024-08-18 17:38:04.680 | INFO     | __main__:<module>:13 - 32 trying for ------- id: 33c8c1d7-5db8-437f-92d2-c3b6f22a554b, name: Senshi (Guerreiro) 戦士
+2024-08-18 17:38:04.680 | INFO     | __main__:<module>:13 - 34 trying for ------- id: 60c36ae9-c28e-472c-abf9-cf43787c466d, name: Arte Espiritual
+2024-08-18 17:38:04.681 | INFO     | __main__:<module>:13 - 35 trying for ------- id: d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6, name: Arte Suave
+2024-08-18 17:38:04.681 | INFO     | __main__:<module>:13 - 36 trying for ------- id: cb1f660e-a583-4793-b67d-2facdd6e5b90, name: Onimisha Exterminador
+2024-08-18 17:38:04.681 | INFO     | __main__:<module>:13 - 37 trying for ------- id: 1511645a-ed75-4894-8da8-2947dc29f4ca, name: Wu-Jen Específicos
+2024-08-18 17:38:04.681 | INFO     | __main__:<module>:13 - 40 trying for ------- id: 9d344880-8ca9-40fa-920c-abfb4736c155, name: Samurai da Lâmina Solar
+2024-08-18 17:38:04.681 | INFO     | __main__:<module>:15 - elemento em 42 é nulo
+2024-08-18 17:38:04.681 | INFO     | __main__:<module>:13 - 45 trying for ------- id: 580bf2d1-2163-4337-968a-e54cb55e1c38, name: Jutsus
+2024-08-18 17:38:04.681 | INFO     | __main__:<module>:13 - 46 trying for ------- id: 4bce3666-2bc3-4b3b-93c5-453b94d790c9, name: Feitiços
+2024-08-18 17:38:04.682 | INFO     | __main__:<module>:13 - 51 trying for ------- id: eebbe4e7-aa44-4bd4-bf1e-c78020238f3d, name: Doutrina da Lâmina Flutuante
+2024-08-18 17:38:04.682 | INFO     | __main__:<module>:13 - 52 trying for ------- id: 9e1f5e58-8289-4d5c-b05e-164057b8e587, name: Doutrina Asas Celestes
+2024-08-18 17:38:04.682 | INFO     | __main__:<module>:13 - 56 trying for ------- id: 57bab793-b252-411b-865e-d2ebd477019e, name: Armas
+2024-08-18 17:38:04.682 | INFO     | __main__:<module>:13 - 57 trying for ------- id: 7a6ca5eb-c7aa-4b5b-8e9d-f517231cba49, name: Materiais Especiais
+2024-08-18 17:38:04.682 | INFO     | __main__:<module>:13 - 59 trying for ------- id: bf5f68ab-225c-4292-9fe9-069d39e6c181, name: Vestimentas e Acessórios
+2024-08-18 17:38:04.682 | INFO     | __main__:<module>:13 - 61 trying for ------- id: 127ad997-3b19-4a15-81a9-355158ffb9e4, name: Itens Específicos
+2024-08-18 17:38:04.682 | INFO     | __main__:<module>:13 - 63 trying for ------- id: 8894fd3d-f1f5-448d-9c90-0408f0ee3661, name: Embarcações
+2024-08-18 17:38:04.682 | INFO     | __main__:<module>:13 - 66 trying for ------- id: 1211541f-2c8d-4cdf-b680-067fe0e0e20d, name: Treinamento
+2024-08-18 17:38:04.683 | INFO     | __main__:<module>:13 - 68 trying for ------- id: 13e0cf08-6929-46a4-8203-58e40b5d3a83, name: Regras Alternativas para morte
+2024-08-18 17:38:04.683 | INFO     | __main__:<module>:13 - 69 trying for ------- id: e6143734-c061-499e-a494-cd34647a74ee, name: classe template
+2024-08-18 17:38:04.683 | INFO     | __main__:<module>:13 - 70 trying for ------- id: 46cb8bda-4e1c-4098-ae01-5f85b277e6c4, name: Miko
+2024-08-18 17:38:04.683 | INFO     | __main__:<module>:21 - END
+2024-08-18 17:39:06.775 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:39:06.776 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:39:07.868 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:39:07.869 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:39:09.192 | INFO     | __main__:<module>:13 - 9 trying for ------- id: 57b59bd0-9cdd-451f-838a-062201c6dff8, name: Raças Padrão do Império de Jade
+2024-08-18 17:39:09.193 | INFO     | __main__:<module>:13 - 10 trying for ------- id: e541a72f-9445-4453-b2d6-569f7db41190, name: Daihenge 大変化
+2024-08-18 17:39:09.193 | INFO     | __main__:<module>:13 - 11 trying for ------- id: f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44, name: Hantatsu 半竜
+2024-08-18 17:39:09.193 | INFO     | __main__:<module>:13 - 12 trying for ------- id: 50ba717b-d3be-433e-b951-30e8e288b890, name: Kugutsu - 傀儡
+2024-08-18 17:39:09.194 | INFO     | __main__:<module>:13 - 13 trying for ------- id: 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1, name: Meio Vanara
+2024-08-18 17:39:09.194 | INFO     | __main__:<module>:13 - 16 trying for ------- id: ac8f7712-c5f9-4c78-8ba8-ed8322811207, name: Akuma 悪魔 - (Sulfures em Tamu-ra)
+2024-08-18 17:39:09.194 | INFO     | __main__:<module>:13 - 17 trying for ------- id: 6e4881a6-981d-4483-9c4e-29d0fff1a630, name: Gyujin 牛人 -(Minotauros em Tamu-ra)
+2024-08-18 17:39:09.194 | INFO     | __main__:<module>:13 - 18 trying for ------- id: f5bd9aac-3789-47c7-ad72-4af012c71398, name: Ten'nin 天人 (Aggelus em Tamu-ra)
+2024-08-18 17:39:09.194 | INFO     | __main__:<module>:13 - 19 trying for ------- id: d33e542e-135a-4d9f-b2cf-f6210a5e2100, name: Yousei 妖精 - (Elfos em Tamu-ra)
+2024-08-18 17:39:09.195 | INFO     | __main__:<module>:13 - 23 trying for ------- id: 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8, name: Kangoshi- 看護師
+2024-08-18 17:39:09.195 | INFO     | __main__:<module>:13 - 24 trying for ------- id: d75ef16b-a42e-4736-909f-3b248723b420, name: Ryōrinin 料理人
+2024-08-18 17:39:09.196 | INFO     | __main__:<module>:13 - 25 trying for ------- id: d7165302-855b-460c-9ee6-abd6aca65025, name: Ongakuka 音楽家
+2024-08-18 17:39:09.197 | INFO     | __main__:<module>:13 - 26 trying for ------- id: c31c47d1-6de2-4789-8728-09508c329cab, name: Enjinia エンジニア
+2024-08-18 17:39:09.197 | INFO     | __main__:<module>:13 - 27 trying for ------- id: bdbc1c05-8f37-4587-9fc2-83e0235e843d, name: Kyudoka
+2024-08-18 17:39:09.197 | INFO     | __main__:<module>:13 - 28 trying for ------- id: 135005cf-1bc8-4607-9330-e94b1a49d638, name: Shinigami
+2024-08-18 17:39:09.198 | INFO     | __main__:<module>:13 - 31 trying for ------- id: b8f64d18-3ac2-4746-aa3f-881960495372, name: Bonzo
+2024-08-18 17:39:09.198 | INFO     | __main__:<module>:13 - 32 trying for ------- id: 33c8c1d7-5db8-437f-92d2-c3b6f22a554b, name: Senshi (Guerreiro) 戦士
+2024-08-18 17:39:09.198 | INFO     | __main__:<module>:13 - 34 trying for ------- id: 60c36ae9-c28e-472c-abf9-cf43787c466d, name: Arte Espiritual
+2024-08-18 17:39:09.198 | INFO     | __main__:<module>:13 - 35 trying for ------- id: d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6, name: Arte Suave
+2024-08-18 17:39:09.199 | INFO     | __main__:<module>:13 - 36 trying for ------- id: cb1f660e-a583-4793-b67d-2facdd6e5b90, name: Onimisha Exterminador
+2024-08-18 17:39:09.199 | INFO     | __main__:<module>:13 - 37 trying for ------- id: 1511645a-ed75-4894-8da8-2947dc29f4ca, name: Wu-Jen Específicos
+2024-08-18 17:39:09.199 | INFO     | __main__:<module>:13 - 40 trying for ------- id: 9d344880-8ca9-40fa-920c-abfb4736c155, name: Samurai da Lâmina Solar
+2024-08-18 17:39:09.199 | INFO     | __main__:<module>:15 - elemento em 42 é nulo
+2024-08-18 17:39:09.200 | INFO     | __main__:<module>:13 - 45 trying for ------- id: 580bf2d1-2163-4337-968a-e54cb55e1c38, name: Jutsus
+2024-08-18 17:39:09.200 | INFO     | __main__:<module>:13 - 46 trying for ------- id: 4bce3666-2bc3-4b3b-93c5-453b94d790c9, name: Feitiços
+2024-08-18 17:39:09.200 | INFO     | __main__:<module>:13 - 51 trying for ------- id: eebbe4e7-aa44-4bd4-bf1e-c78020238f3d, name: Doutrina da Lâmina Flutuante
+2024-08-18 17:39:09.200 | INFO     | __main__:<module>:13 - 52 trying for ------- id: 9e1f5e58-8289-4d5c-b05e-164057b8e587, name: Doutrina Asas Celestes
+2024-08-18 17:39:09.201 | INFO     | __main__:<module>:13 - 56 trying for ------- id: 57bab793-b252-411b-865e-d2ebd477019e, name: Armas
+2024-08-18 17:39:09.201 | INFO     | __main__:<module>:13 - 57 trying for ------- id: 7a6ca5eb-c7aa-4b5b-8e9d-f517231cba49, name: Materiais Especiais
+2024-08-18 17:39:09.201 | INFO     | __main__:<module>:13 - 59 trying for ------- id: bf5f68ab-225c-4292-9fe9-069d39e6c181, name: Vestimentas e Acessórios
+2024-08-18 17:39:09.201 | INFO     | __main__:<module>:13 - 61 trying for ------- id: 127ad997-3b19-4a15-81a9-355158ffb9e4, name: Itens Específicos
+2024-08-18 17:39:09.202 | INFO     | __main__:<module>:13 - 63 trying for ------- id: 8894fd3d-f1f5-448d-9c90-0408f0ee3661, name: Embarcações
+2024-08-18 17:39:09.202 | INFO     | __main__:<module>:13 - 66 trying for ------- id: 1211541f-2c8d-4cdf-b680-067fe0e0e20d, name: Treinamento
+2024-08-18 17:39:09.202 | INFO     | __main__:<module>:13 - 68 trying for ------- id: 13e0cf08-6929-46a4-8203-58e40b5d3a83, name: Regras Alternativas para morte
+2024-08-18 17:39:09.202 | INFO     | __main__:<module>:13 - 69 trying for ------- id: e6143734-c061-499e-a494-cd34647a74ee, name: classe template
+2024-08-18 17:39:09.203 | INFO     | __main__:<module>:13 - 70 trying for ------- id: 46cb8bda-4e1c-4098-ae01-5f85b277e6c4, name: Miko
+2024-08-18 17:39:09.203 | INFO     | __main__:<module>:22 - END
+2024-08-18 17:42:55.161 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:42:55.162 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:42:55.913 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:42:55.914 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:42:57.450 | INFO     | __main__:<module>:12 - 9 trying for ------- id: 57b59bd0-9cdd-451f-838a-062201c6dff8, child_page, name: Raças Padrão do Império de Jade
+2024-08-18 17:42:57.450 | INFO     | __main__:<module>:12 - 10 trying for ------- id: e541a72f-9445-4453-b2d6-569f7db41190, child_page, name: Daihenge 大変化
+2024-08-18 17:42:57.451 | INFO     | __main__:<module>:12 - 11 trying for ------- id: f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44, child_page, name: Hantatsu 半竜
+2024-08-18 17:42:57.451 | INFO     | __main__:<module>:12 - 12 trying for ------- id: 50ba717b-d3be-433e-b951-30e8e288b890, child_page, name: Kugutsu - 傀儡
+2024-08-18 17:42:57.451 | INFO     | __main__:<module>:12 - 13 trying for ------- id: 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1, child_page, name: Meio Vanara
+2024-08-18 17:42:57.451 | INFO     | __main__:<module>:12 - 16 trying for ------- id: ac8f7712-c5f9-4c78-8ba8-ed8322811207, child_page, name: Akuma 悪魔 - (Sulfures em Tamu-ra)
+2024-08-18 17:42:57.451 | INFO     | __main__:<module>:12 - 17 trying for ------- id: 6e4881a6-981d-4483-9c4e-29d0fff1a630, child_page, name: Gyujin 牛人 -(Minotauros em Tamu-ra)
+2024-08-18 17:42:57.452 | INFO     | __main__:<module>:12 - 18 trying for ------- id: f5bd9aac-3789-47c7-ad72-4af012c71398, child_page, name: Ten'nin 天人 (Aggelus em Tamu-ra)
+2024-08-18 17:42:57.452 | INFO     | __main__:<module>:12 - 19 trying for ------- id: d33e542e-135a-4d9f-b2cf-f6210a5e2100, child_page, name: Yousei 妖精 - (Elfos em Tamu-ra)
+2024-08-18 17:42:57.452 | INFO     | __main__:<module>:12 - 23 trying for ------- id: 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8, child_page, name: Kangoshi- 看護師
+2024-08-18 17:42:57.452 | INFO     | __main__:<module>:12 - 24 trying for ------- id: d75ef16b-a42e-4736-909f-3b248723b420, child_page, name: Ryōrinin 料理人
+2024-08-18 17:42:57.452 | INFO     | __main__:<module>:12 - 25 trying for ------- id: d7165302-855b-460c-9ee6-abd6aca65025, child_page, name: Ongakuka 音楽家
+2024-08-18 17:42:57.452 | INFO     | __main__:<module>:12 - 26 trying for ------- id: c31c47d1-6de2-4789-8728-09508c329cab, child_page, name: Enjinia エンジニア
+2024-08-18 17:42:57.452 | INFO     | __main__:<module>:12 - 27 trying for ------- id: bdbc1c05-8f37-4587-9fc2-83e0235e843d, child_page, name: Kyudoka
+2024-08-18 17:42:57.453 | INFO     | __main__:<module>:12 - 28 trying for ------- id: 135005cf-1bc8-4607-9330-e94b1a49d638, child_page, name: Shinigami
+2024-08-18 17:42:57.453 | INFO     | __main__:<module>:12 - 31 trying for ------- id: b8f64d18-3ac2-4746-aa3f-881960495372, child_page, name: Bonzo
+2024-08-18 17:42:57.453 | INFO     | __main__:<module>:12 - 32 trying for ------- id: 33c8c1d7-5db8-437f-92d2-c3b6f22a554b, child_page, name: Senshi (Guerreiro) 戦士
+2024-08-18 17:42:57.453 | INFO     | __main__:<module>:12 - 34 trying for ------- id: 60c36ae9-c28e-472c-abf9-cf43787c466d, child_page, name: Arte Espiritual
+2024-08-18 17:42:57.453 | INFO     | __main__:<module>:12 - 35 trying for ------- id: d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6, child_page, name: Arte Suave
+2024-08-18 17:42:57.453 | INFO     | __main__:<module>:12 - 36 trying for ------- id: cb1f660e-a583-4793-b67d-2facdd6e5b90, child_page, name: Onimisha Exterminador
+2024-08-18 17:42:57.453 | INFO     | __main__:<module>:12 - 37 trying for ------- id: 1511645a-ed75-4894-8da8-2947dc29f4ca, child_page, name: Wu-Jen Específicos
+2024-08-18 17:42:57.454 | INFO     | __main__:<module>:12 - 40 trying for ------- id: 9d344880-8ca9-40fa-920c-abfb4736c155, child_page, name: Samurai da Lâmina Solar
+2024-08-18 17:42:57.454 | INFO     | __main__:<module>:12 - 45 trying for ------- id: 580bf2d1-2163-4337-968a-e54cb55e1c38, child_page, name: Jutsus
+2024-08-18 17:42:57.454 | INFO     | __main__:<module>:12 - 46 trying for ------- id: 4bce3666-2bc3-4b3b-93c5-453b94d790c9, child_page, name: Feitiços
+2024-08-18 17:42:57.454 | INFO     | __main__:<module>:12 - 51 trying for ------- id: eebbe4e7-aa44-4bd4-bf1e-c78020238f3d, child_page, name: Doutrina da Lâmina Flutuante
+2024-08-18 17:42:57.454 | INFO     | __main__:<module>:12 - 52 trying for ------- id: 9e1f5e58-8289-4d5c-b05e-164057b8e587, child_page, name: Doutrina Asas Celestes
+2024-08-18 17:42:57.454 | INFO     | __main__:<module>:12 - 56 trying for ------- id: 57bab793-b252-411b-865e-d2ebd477019e, child_page, name: Armas
+2024-08-18 17:42:57.454 | INFO     | __main__:<module>:12 - 57 trying for ------- id: 7a6ca5eb-c7aa-4b5b-8e9d-f517231cba49, child_page, name: Materiais Especiais
+2024-08-18 17:42:57.455 | INFO     | __main__:<module>:12 - 59 trying for ------- id: bf5f68ab-225c-4292-9fe9-069d39e6c181, child_page, name: Vestimentas e Acessórios
+2024-08-18 17:42:57.455 | INFO     | __main__:<module>:12 - 61 trying for ------- id: 127ad997-3b19-4a15-81a9-355158ffb9e4, child_page, name: Itens Específicos
+2024-08-18 17:42:57.455 | INFO     | __main__:<module>:12 - 63 trying for ------- id: 8894fd3d-f1f5-448d-9c90-0408f0ee3661, child_page, name: Embarcações
+2024-08-18 17:42:57.455 | INFO     | __main__:<module>:12 - 66 trying for ------- id: 1211541f-2c8d-4cdf-b680-067fe0e0e20d, child_page, name: Treinamento
+2024-08-18 17:42:57.455 | INFO     | __main__:<module>:12 - 68 trying for ------- id: 13e0cf08-6929-46a4-8203-58e40b5d3a83, child_page, name: Regras Alternativas para morte
+2024-08-18 17:42:57.455 | INFO     | __main__:<module>:12 - 69 trying for ------- id: e6143734-c061-499e-a494-cd34647a74ee, child_page, name: classe template
+2024-08-18 17:42:57.455 | INFO     | __main__:<module>:12 - 70 trying for ------- id: 46cb8bda-4e1c-4098-ae01-5f85b277e6c4, child_page, name: Miko
+2024-08-18 17:42:57.456 | INFO     | __main__:<module>:18 - END
+2024-08-18 17:44:07.502 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:44:07.502 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:44:08.004 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:44:08.005 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:44:08.825 | INFO     | __main__:<module>:11 - 9 trying for ------- id: 57b59bd0-9cdd-451f-838a-062201c6dff8, child_page, name: Raças Padrão do Império de Jade
+2024-08-18 17:44:08.826 | INFO     | __main__:<module>:11 - 10 trying for ------- id: e541a72f-9445-4453-b2d6-569f7db41190, child_page, name: Daihenge 大変化
+2024-08-18 17:44:08.826 | INFO     | __main__:<module>:11 - 11 trying for ------- id: f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44, child_page, name: Hantatsu 半竜
+2024-08-18 17:44:08.827 | INFO     | __main__:<module>:11 - 12 trying for ------- id: 50ba717b-d3be-433e-b951-30e8e288b890, child_page, name: Kugutsu - 傀儡
+2024-08-18 17:44:08.827 | INFO     | __main__:<module>:11 - 13 trying for ------- id: 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1, child_page, name: Meio Vanara
+2024-08-18 17:44:08.828 | INFO     | __main__:<module>:11 - 16 trying for ------- id: ac8f7712-c5f9-4c78-8ba8-ed8322811207, child_page, name: Akuma 悪魔 - (Sulfures em Tamu-ra)
+2024-08-18 17:44:08.828 | INFO     | __main__:<module>:11 - 17 trying for ------- id: 6e4881a6-981d-4483-9c4e-29d0fff1a630, child_page, name: Gyujin 牛人 -(Minotauros em Tamu-ra)
+2024-08-18 17:44:08.828 | INFO     | __main__:<module>:11 - 18 trying for ------- id: f5bd9aac-3789-47c7-ad72-4af012c71398, child_page, name: Ten'nin 天人 (Aggelus em Tamu-ra)
+2024-08-18 17:44:08.828 | INFO     | __main__:<module>:11 - 19 trying for ------- id: d33e542e-135a-4d9f-b2cf-f6210a5e2100, child_page, name: Yousei 妖精 - (Elfos em Tamu-ra)
+2024-08-18 17:44:08.829 | INFO     | __main__:<module>:11 - 23 trying for ------- id: 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8, child_page, name: Kangoshi- 看護師
+2024-08-18 17:44:08.829 | INFO     | __main__:<module>:11 - 24 trying for ------- id: d75ef16b-a42e-4736-909f-3b248723b420, child_page, name: Ryōrinin 料理人
+2024-08-18 17:44:08.829 | INFO     | __main__:<module>:11 - 25 trying for ------- id: d7165302-855b-460c-9ee6-abd6aca65025, child_page, name: Ongakuka 音楽家
+2024-08-18 17:44:08.829 | INFO     | __main__:<module>:11 - 26 trying for ------- id: c31c47d1-6de2-4789-8728-09508c329cab, child_page, name: Enjinia エンジニア
+2024-08-18 17:44:08.830 | INFO     | __main__:<module>:11 - 27 trying for ------- id: bdbc1c05-8f37-4587-9fc2-83e0235e843d, child_page, name: Kyudoka
+2024-08-18 17:44:08.830 | INFO     | __main__:<module>:11 - 28 trying for ------- id: 135005cf-1bc8-4607-9330-e94b1a49d638, child_page, name: Shinigami
+2024-08-18 17:44:08.830 | INFO     | __main__:<module>:11 - 31 trying for ------- id: b8f64d18-3ac2-4746-aa3f-881960495372, child_page, name: Bonzo
+2024-08-18 17:44:08.830 | INFO     | __main__:<module>:11 - 32 trying for ------- id: 33c8c1d7-5db8-437f-92d2-c3b6f22a554b, child_page, name: Senshi (Guerreiro) 戦士
+2024-08-18 17:44:08.831 | INFO     | __main__:<module>:11 - 34 trying for ------- id: 60c36ae9-c28e-472c-abf9-cf43787c466d, child_page, name: Arte Espiritual
+2024-08-18 17:44:08.831 | INFO     | __main__:<module>:11 - 35 trying for ------- id: d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6, child_page, name: Arte Suave
+2024-08-18 17:44:08.831 | INFO     | __main__:<module>:11 - 36 trying for ------- id: cb1f660e-a583-4793-b67d-2facdd6e5b90, child_page, name: Onimisha Exterminador
+2024-08-18 17:44:08.831 | INFO     | __main__:<module>:11 - 37 trying for ------- id: 1511645a-ed75-4894-8da8-2947dc29f4ca, child_page, name: Wu-Jen Específicos
+2024-08-18 17:44:08.832 | INFO     | __main__:<module>:11 - 40 trying for ------- id: 9d344880-8ca9-40fa-920c-abfb4736c155, child_page, name: Samurai da Lâmina Solar
+2024-08-18 17:44:08.832 | INFO     | __main__:<module>:11 - 45 trying for ------- id: 580bf2d1-2163-4337-968a-e54cb55e1c38, child_page, name: Jutsus
+2024-08-18 17:44:08.832 | INFO     | __main__:<module>:11 - 46 trying for ------- id: 4bce3666-2bc3-4b3b-93c5-453b94d790c9, child_page, name: Feitiços
+2024-08-18 17:44:08.832 | INFO     | __main__:<module>:11 - 51 trying for ------- id: eebbe4e7-aa44-4bd4-bf1e-c78020238f3d, child_page, name: Doutrina da Lâmina Flutuante
+2024-08-18 17:44:08.833 | INFO     | __main__:<module>:11 - 52 trying for ------- id: 9e1f5e58-8289-4d5c-b05e-164057b8e587, child_page, name: Doutrina Asas Celestes
+2024-08-18 17:44:08.833 | INFO     | __main__:<module>:11 - 56 trying for ------- id: 57bab793-b252-411b-865e-d2ebd477019e, child_page, name: Armas
+2024-08-18 17:44:08.833 | INFO     | __main__:<module>:11 - 57 trying for ------- id: 7a6ca5eb-c7aa-4b5b-8e9d-f517231cba49, child_page, name: Materiais Especiais
+2024-08-18 17:44:08.833 | INFO     | __main__:<module>:11 - 59 trying for ------- id: bf5f68ab-225c-4292-9fe9-069d39e6c181, child_page, name: Vestimentas e Acessórios
+2024-08-18 17:44:08.833 | INFO     | __main__:<module>:11 - 61 trying for ------- id: 127ad997-3b19-4a15-81a9-355158ffb9e4, child_page, name: Itens Específicos
+2024-08-18 17:44:08.834 | INFO     | __main__:<module>:11 - 63 trying for ------- id: 8894fd3d-f1f5-448d-9c90-0408f0ee3661, child_page, name: Embarcações
+2024-08-18 17:44:08.834 | INFO     | __main__:<module>:11 - 66 trying for ------- id: 1211541f-2c8d-4cdf-b680-067fe0e0e20d, child_page, name: Treinamento
+2024-08-18 17:44:08.834 | INFO     | __main__:<module>:11 - 68 trying for ------- id: 13e0cf08-6929-46a4-8203-58e40b5d3a83, child_page, name: Regras Alternativas para morte
+2024-08-18 17:44:08.834 | INFO     | __main__:<module>:11 - 69 trying for ------- id: e6143734-c061-499e-a494-cd34647a74ee, child_page, name: classe template
+2024-08-18 17:44:08.835 | INFO     | __main__:<module>:11 - 70 trying for ------- id: 46cb8bda-4e1c-4098-ae01-5f85b277e6c4, child_page, name: Miko
+2024-08-18 17:44:08.835 | INFO     | __main__:<module>:17 - END
+2024-08-18 17:47:48.975 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:47:48.975 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:47:50.119 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:47:50.120 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:47:50.922 | INFO     | __main__:<module>:11 - 9 trying for ------- id: 57b59bd0-9cdd-451f-838a-062201c6dff8, child_page, name: Raças Padrão do Império de Jade
+2024-08-18 17:47:50.923 | INFO     | __main__:<module>:11 - 10 trying for ------- id: e541a72f-9445-4453-b2d6-569f7db41190, child_page, name: Daihenge 大変化
+2024-08-18 17:47:50.923 | INFO     | __main__:<module>:11 - 11 trying for ------- id: f0f5cf3d-2e5e-46b9-b8f0-b206d7092f44, child_page, name: Hantatsu 半竜
+2024-08-18 17:47:50.923 | INFO     | __main__:<module>:11 - 12 trying for ------- id: 50ba717b-d3be-433e-b951-30e8e288b890, child_page, name: Kugutsu - 傀儡
+2024-08-18 17:47:50.924 | INFO     | __main__:<module>:11 - 13 trying for ------- id: 11eaf7ea-37c9-4a0f-bbb2-0f180374baf1, child_page, name: Meio Vanara
+2024-08-18 17:47:50.924 | INFO     | __main__:<module>:11 - 16 trying for ------- id: ac8f7712-c5f9-4c78-8ba8-ed8322811207, child_page, name: Akuma 悪魔 - (Sulfures em Tamu-ra)
+2024-08-18 17:47:50.925 | INFO     | __main__:<module>:11 - 17 trying for ------- id: 6e4881a6-981d-4483-9c4e-29d0fff1a630, child_page, name: Gyujin 牛人 -(Minotauros em Tamu-ra)
+2024-08-18 17:47:50.925 | INFO     | __main__:<module>:11 - 18 trying for ------- id: f5bd9aac-3789-47c7-ad72-4af012c71398, child_page, name: Ten'nin 天人 (Aggelus em Tamu-ra)
+2024-08-18 17:47:50.925 | INFO     | __main__:<module>:11 - 19 trying for ------- id: d33e542e-135a-4d9f-b2cf-f6210a5e2100, child_page, name: Yousei 妖精 - (Elfos em Tamu-ra)
+2024-08-18 17:47:50.925 | INFO     | __main__:<module>:11 - 23 trying for ------- id: 8c0f461e-d3c7-402e-9a6b-6ce17d4034b8, child_page, name: Kangoshi- 看護師
+2024-08-18 17:47:50.926 | INFO     | __main__:<module>:11 - 24 trying for ------- id: d75ef16b-a42e-4736-909f-3b248723b420, child_page, name: Ryōrinin 料理人
+2024-08-18 17:47:50.926 | INFO     | __main__:<module>:11 - 25 trying for ------- id: d7165302-855b-460c-9ee6-abd6aca65025, child_page, name: Ongakuka 音楽家
+2024-08-18 17:47:50.926 | INFO     | __main__:<module>:11 - 26 trying for ------- id: c31c47d1-6de2-4789-8728-09508c329cab, child_page, name: Enjinia エンジニア
+2024-08-18 17:47:50.926 | INFO     | __main__:<module>:11 - 27 trying for ------- id: bdbc1c05-8f37-4587-9fc2-83e0235e843d, child_page, name: Kyudoka
+2024-08-18 17:47:50.926 | INFO     | __main__:<module>:11 - 28 trying for ------- id: 135005cf-1bc8-4607-9330-e94b1a49d638, child_page, name: Shinigami
+2024-08-18 17:47:50.927 | INFO     | __main__:<module>:11 - 31 trying for ------- id: b8f64d18-3ac2-4746-aa3f-881960495372, child_page, name: Bonzo
+2024-08-18 17:47:50.927 | INFO     | __main__:<module>:11 - 32 trying for ------- id: 33c8c1d7-5db8-437f-92d2-c3b6f22a554b, child_page, name: Senshi (Guerreiro) 戦士
+2024-08-18 17:47:50.927 | INFO     | __main__:<module>:11 - 34 trying for ------- id: 60c36ae9-c28e-472c-abf9-cf43787c466d, child_page, name: Arte Espiritual
+2024-08-18 17:47:50.927 | INFO     | __main__:<module>:11 - 35 trying for ------- id: d6b3583d-d02c-41e9-8a19-d5e07a7bd4c6, child_page, name: Arte Suave
+2024-08-18 17:47:50.927 | INFO     | __main__:<module>:11 - 36 trying for ------- id: cb1f660e-a583-4793-b67d-2facdd6e5b90, child_page, name: Onimisha Exterminador
+2024-08-18 17:47:50.928 | INFO     | __main__:<module>:11 - 37 trying for ------- id: 1511645a-ed75-4894-8da8-2947dc29f4ca, child_page, name: Wu-Jen Específicos
+2024-08-18 17:47:50.928 | INFO     | __main__:<module>:11 - 40 trying for ------- id: 9d344880-8ca9-40fa-920c-abfb4736c155, child_page, name: Samurai da Lâmina Solar
+2024-08-18 17:47:50.928 | INFO     | __main__:<module>:11 - 45 trying for ------- id: 580bf2d1-2163-4337-968a-e54cb55e1c38, child_page, name: Jutsus
+2024-08-18 17:47:50.928 | INFO     | __main__:<module>:11 - 46 trying for ------- id: 4bce3666-2bc3-4b3b-93c5-453b94d790c9, child_page, name: Feitiços
+2024-08-18 17:47:50.929 | INFO     | __main__:<module>:11 - 51 trying for ------- id: eebbe4e7-aa44-4bd4-bf1e-c78020238f3d, child_page, name: Doutrina da Lâmina Flutuante
+2024-08-18 17:47:50.929 | INFO     | __main__:<module>:11 - 52 trying for ------- id: 9e1f5e58-8289-4d5c-b05e-164057b8e587, child_page, name: Doutrina Asas Celestes
+2024-08-18 17:47:50.929 | INFO     | __main__:<module>:11 - 56 trying for ------- id: 57bab793-b252-411b-865e-d2ebd477019e, child_page, name: Armas
+2024-08-18 17:47:50.929 | INFO     | __main__:<module>:11 - 57 trying for ------- id: 7a6ca5eb-c7aa-4b5b-8e9d-f517231cba49, child_page, name: Materiais Especiais
+2024-08-18 17:47:50.929 | INFO     | __main__:<module>:11 - 59 trying for ------- id: bf5f68ab-225c-4292-9fe9-069d39e6c181, child_page, name: Vestimentas e Acessórios
+2024-08-18 17:47:50.930 | INFO     | __main__:<module>:11 - 61 trying for ------- id: 127ad997-3b19-4a15-81a9-355158ffb9e4, child_page, name: Itens Específicos
+2024-08-18 17:47:50.930 | INFO     | __main__:<module>:11 - 63 trying for ------- id: 8894fd3d-f1f5-448d-9c90-0408f0ee3661, child_page, name: Embarcações
+2024-08-18 17:47:50.930 | INFO     | __main__:<module>:11 - 66 trying for ------- id: 1211541f-2c8d-4cdf-b680-067fe0e0e20d, child_page, name: Treinamento
+2024-08-18 17:47:50.930 | INFO     | __main__:<module>:11 - 68 trying for ------- id: 13e0cf08-6929-46a4-8203-58e40b5d3a83, child_page, name: Regras Alternativas para morte
+2024-08-18 17:47:50.931 | INFO     | __main__:<module>:11 - 69 trying for ------- id: e6143734-c061-499e-a494-cd34647a74ee, child_page, name: classe template
+2024-08-18 17:47:50.931 | INFO     | __main__:<module>:11 - 70 trying for ------- id: 46cb8bda-4e1c-4098-ae01-5f85b277e6c4, child_page, name: Miko
+2024-08-18 17:47:50.932 | INFO     | __main__:<module>:17 - END
+2024-08-18 17:50:14.920 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:50:14.920 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:50:17.760 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:50:17.761 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:50:18.334 | INFO     | __main__:<module>:15 - END
+2024-08-18 17:50:45.925 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:50:45.925 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:50:46.354 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:50:46.355 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:50:47.061 | INFO     | __main__:<module>:18 - END
+2024-08-18 17:51:10.452 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:51:10.452 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:51:11.033 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:51:11.034 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:51:11.813 | INFO     | __main__:<module>:18 - END
+2024-08-18 17:51:25.275 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:51:25.275 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:51:25.883 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:51:25.884 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:51:26.600 | INFO     | __main__:<module>:18 - END
+2024-08-18 17:51:37.271 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:51:37.271 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:51:37.966 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:51:37.967 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:51:40.629 | INFO     | __main__:<module>:18 - END
+2024-08-18 17:54:07.540 | INFO     | __main__:<module>:6 - starting
+2024-08-18 17:54:07.540 | INFO     | client:__init__:16 - STARTING CLIENT
+2024-08-18 17:54:07.986 | INFO     | client:__init__:21 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+ (id eb0732ffc77245039cff079d5e179cb8)
+2024-08-18 17:54:07.986 | INFO     | client:__init__:22 - CLIENT DONE
+2024-08-18 17:54:08.909 | INFO     | __main__:<module>:18 - END

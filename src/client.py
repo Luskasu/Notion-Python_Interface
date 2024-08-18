@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 from loguru import logger
 from pages import Page
 from requests import post, get
-from requests import post, get
 from json import dumps
 from config import *
 
@@ -25,7 +24,7 @@ class Client:
     def get_page_by_id(self, page_id:str) -> Page:
         url = f"{NOTION_BASE_URL}/pages/{page_id}"
         response = get(url, headers=self.headers)
-        
+
         page_icon = response.json().get("icon")
         page_root = response.json().get("parent")
         page_title = response.json().get("properties")
