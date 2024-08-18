@@ -23,3 +23,6 @@ pip install notion-python-client
 2. Since you have a integrantion, run the file setup_env.py or just create a file called ".env" in root directory and write "NOTION_TOKEN=your_api_token" (without quote). you can also store it in yout system local variables.
 
 PAGE IN CONSTRUCTION
+
+## License
+this project is under the [MIT License](LICENSE).
