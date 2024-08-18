@@ -31,7 +31,7 @@ PAGE IN CONSTRUCTION
 - Support to more block types(lists, code, quote).
 - More support for emoji and page customization (images).
 - Support for notion databases.
-
+- Expand markdown support
 ## License
 
 this project is under the [MIT License](LICENSE).
