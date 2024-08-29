@@ -11,14 +11,6 @@ Notion Python Interface is a python client to insteract with Notion API. It allo
 - Markdown formating support
 - integrated Loguru's logs
 
-## Installing
-
-To install Notion Python Interface, run:
-
-```bash
-pip install notion-python-client
-```
-
 ### Setup
 
 1. The first thing you need is to create an integration in notion and make sure you have shared the home page you want to edit with it.<br> Read [Notion Integrations](https://www.notion.so/pt/help/create-integrations-with-the-notion-api) if you are not familiar with notion integrations.
