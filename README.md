@@ -26,6 +26,12 @@ pip install notion-python-client
 
 PAGE IN CONSTRUCTION
 
+## Some Planned Fatures
+- Setup bashscript to improve the environment management.
+- Support to more block types(lists, code, quote).
+- More support for emoji and page customization (images).
+- Support for notion databases.
+- Expand markdown support
 ## License
 
 this project is under the [MIT License](LICENSE).
