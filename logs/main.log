@@ -1,184 +1,64 @@
-2024-08-29 16:57:59.914 | INFO     | __main__:<module>:15 - starting
-2024-08-29 16:57:59.915 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 16:58:04.024 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 16:58:04.025 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 16:58:04.025 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 16:58:04.026 | ERROR    | __main__:<module>:24 - local variable 'text_list' referenced before assignment
+2024-09-05 13:19:53.803 | INFO     | __main__:<module>:8 - starting
+2024-09-05 13:19:53.803 | INFO     | client:__init__:17 - STARTING CLIENT
+2024-09-05 13:19:54.372 | INFO     | client:open_page_by_id:48 - Failed to create page. Status code: 401
+2024-09-05 13:19:54.372 | INFO     | client:open_page_by_id:49 - {"object":"error","status":401,"code":"unauthorized","message":"API token is invalid.","request_id":"f5ff064f-6f08-492a-9dbe-53ebfcf8df20"}
+2024-09-05 13:19:54.373 | ERROR    | __main__:<module>:18 - 'NoneType' object has no attribute 'title'
 Traceback (most recent call last):
 
-> File "/home/lusca/projetos/notion-auto/src/main.py", line 21, in <module>
-    client.home.add_bulleted_list(rotina_de_nerd)
-    │      │    │                 └ ['fazer janta', 'jogar lol', 'chorar no banho']
-    │      │    └ <function Page.add_bulleted_list at 0x793c983a2170>
-    │      └ <pages.Page object at 0x793c9839f730>
-    └ <client.Client object at 0x793c98f1db70>
+> File "/home/lusca/projetos/notion_interface_module/src/notioninterface/main.py", line 10, in <module>
+    client = Client("eb0732ffc77245039cff079d5e179cb8")
+             └ <class 'client.Client'>
 
-  File "/home/lusca/projetos/notion-auto/src/pages.py", line 266, in add_bulleted_list
-    for line in text_list:
+  File "/home/lusca/projetos/notion_interface_module/src/notioninterface/client.py", line 22, in __init__
+    logger.info(f"client home defined to page {self.home.title} at url {self.home.page_url}\n (id {self.home.page_id})")
+    │      └ <function Logger.info at 0x7ec9b95903a0>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='logs/main.log')]>
 
-UnboundLocalError: local variable 'text_list' referenced before assignment
-2024-08-29 16:58:04.029 | INFO     | __main__:<module>:26 - END
-2024-08-29 16:58:24.547 | INFO     | __main__:<module>:15 - starting
-2024-08-29 16:58:24.548 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 16:58:25.731 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 16:58:25.732 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 16:58:25.733 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 16:58:25.734 | ERROR    | __main__:<module>:24 - string index out of range
+AttributeError: 'NoneType' object has no attribute 'title'
+2024-09-05 13:19:54.376 | INFO     | __main__:<module>:20 - END
+2024-09-05 13:23:24.590 | INFO     | __main__:<module>:8 - starting
+2024-09-05 13:23:24.591 | INFO     | client:__init__:17 - STARTING CLIENT
+2024-09-05 13:23:24.972 | INFO     | client:open_page_by_id:48 - Failed to create page. Status code: 401
+2024-09-05 13:23:24.972 | INFO     | client:open_page_by_id:49 - {"object":"error","status":401,"code":"unauthorized","message":"API token is invalid.","request_id":"bfd55a26-94bd-400e-9933-6951a5bd7a50"}
+2024-09-05 13:23:24.973 | ERROR    | __main__:<module>:18 - 'NoneType' object has no attribute 'title'
 Traceback (most recent call last):
 
-> File "/home/lusca/projetos/notion-auto/src/main.py", line 21, in <module>
-    client.home.add_bulleted_list(rotina_de_nerd)
-    │      │    │                 └ ['fazer janta', 'jogar lol', 'chorar no banho']
-    │      │    └ <function Page.add_bulleted_list at 0x721738b16170>
-    │      └ <pages.Page object at 0x721738b13790>
-    └ <client.Client object at 0x721738b10ee0>
+> File "/home/lusca/projetos/notion_interface_module/src/notioninterface/main.py", line 10, in <module>
+    client = Client("eb0732ffc77245039cff079d5e179cb8")
+             └ <class 'client.Client'>
 
-  File "/home/lusca/projetos/notion-auto/src/pages.py", line 278, in add_bulleted_list
-    "content": chunk[1]
-               └ 'f'
+  File "/home/lusca/projetos/notion_interface_module/src/notioninterface/client.py", line 22, in __init__
+    logger.info(f"client home defined to page {self.home.title} at url {self.home.page_url}\n (id {self.home.page_id})")
+    │      └ <function Logger.info at 0x7283f2c983a0>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='logs/main.log')]>
 
-IndexError: string index out of range
-2024-08-29 16:58:25.739 | INFO     | __main__:<module>:26 - END
-2024-08-29 17:02:59.935 | INFO     | __main__:<module>:15 - starting
-2024-08-29 17:02:59.936 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 17:03:01.083 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 17:03:01.084 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 17:03:01.085 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 17:03:02.119 | INFO     | pages:add_bulleted_list:306 - foi
-2024-08-29 17:03:02.120 | INFO     | __main__:<module>:26 - END
-2024-08-29 17:04:24.710 | INFO     | __main__:<module>:15 - starting
-2024-08-29 17:04:24.711 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 17:04:25.068 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 17:04:25.069 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 17:04:25.069 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 17:04:26.386 | INFO     | pages:add_bulleted_list:306 - foi
-2024-08-29 17:04:26.387 | INFO     | __main__:<module>:26 - END
-2024-08-29 19:25:48.541 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:25:48.541 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:25:49.129 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:25:49.130 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:25:49.131 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:25:49.131 | ERROR    | __main__:<module>:24 - string index out of range
+AttributeError: 'NoneType' object has no attribute 'title'
+2024-09-05 13:23:24.976 | INFO     | __main__:<module>:20 - END
+2024-09-05 13:24:49.029 | INFO     | __main__:<module>:8 - starting
+2024-09-05 13:24:49.029 | INFO     | client:__init__:17 - STARTING CLIENT
+2024-09-05 13:24:49.411 | INFO     | client:open_page_by_id:48 - Failed to create page. Status code: 401
+2024-09-05 13:24:49.412 | INFO     | client:open_page_by_id:49 - {"object":"error","status":401,"code":"unauthorized","message":"API token is invalid.","request_id":"5f49bc07-3754-4dc8-851d-f8ff9a1244db"}
+2024-09-05 13:24:49.412 | ERROR    | __main__:<module>:18 - 'NoneType' object has no attribute 'title'
 Traceback (most recent call last):
 
-> File "/home/lusca/projetos/notion-auto/src/main.py", line 21, in <module>
-    client.home.add_bulleted_list(rotina_de_nerd)
-    │      │    │                 └ ['fazer janta', 'jogar lol', 'chorar no banho']
-    │      │    └ <function Page.add_bulleted_list at 0x7ad9bd5160e0>
-    │      └ <pages.Page object at 0x7ad9bd513790>
-    └ <client.Client object at 0x7ad9bd510d90>
+> File "/home/lusca/projetos/notion_interface_module/src/notioninterface/main.py", line 10, in <module>
+    client = Client("eb0732ffc77245039cff079d5e179cb8")
+             └ <class 'client.Client'>
 
-  File "/home/lusca/projetos/notion-auto/src/pages.py", line 276, in add_bulleted_list
-    "content": chunk[1]
-               └ 'f'
+  File "/home/lusca/projetos/notion_interface_module/src/notioninterface/client.py", line 22, in __init__
+    logger.info(f"client home defined to page {self.home.title} at url {self.home.page_url}\n (id {self.home.page_id})")
+    │      └ <function Logger.info at 0x79f6fdf943a0>
+    └ <loguru.logger handlers=[(id=0, level=10, sink=<stderr>), (id=1, level=10, sink='logs/main.log')]>
 
-IndexError: string index out of range
-2024-08-29 19:25:49.137 | INFO     | __main__:<module>:26 - END
-2024-08-29 19:29:06.119 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:29:06.119 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:29:06.928 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:29:06.929 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+AttributeError: 'NoneType' object has no attribute 'title'
+2024-09-05 13:24:49.414 | INFO     | __main__:<module>:20 - END
+2024-09-05 13:27:23.950 | INFO     | __main__:<module>:8 - starting
+2024-09-05 13:27:23.951 | INFO     | client:__init__:19 - STARTING CLIENT
+2024-09-05 13:27:24.381 | INFO     | client:open_page_by_id:47 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
+2024-09-05 13:27:24.381 | INFO     | client:__init__:23 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
  (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:29:06.932 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:29:09.957 | INFO     | pages:add_bulleted_list:305 - foi
-2024-08-29 19:29:09.957 | INFO     | __main__:<module>:26 - END
-2024-08-29 19:29:48.749 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:29:48.749 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:29:49.184 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:29:49.185 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:29:49.185 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:29:50.511 | INFO     | pages:add_bulleted_list:305 - foi
-2024-08-29 19:29:50.512 | INFO     | __main__:<module>:26 - END
-2024-08-29 19:34:33.670 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:34:33.671 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:34:34.345 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:34:34.346 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:34:34.346 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:34:36.000 | INFO     | pages:add_bulleted_list:306 - foi
-2024-08-29 19:34:36.000 | INFO     | __main__:<module>:26 - END
-2024-08-29 19:35:02.077 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:35:02.078 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:35:03.921 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:35:03.922 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:35:03.922 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:35:04.535 | INFO     | pages:add_bulleted_list:306 - foi
-2024-08-29 19:35:04.536 | INFO     | __main__:<module>:26 - END
-2024-08-29 19:45:39.608 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:45:39.609 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:45:40.836 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:45:40.837 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:45:40.837 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:45:42.434 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:45:43.021 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:45:44.060 | INFO     | pages:add_bulleted_list:295 - foi
-2024-08-29 19:45:44.061 | INFO     | __main__:<module>:27 - END
-2024-08-29 19:46:21.917 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:46:21.917 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:46:22.450 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:46:22.451 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:46:22.452 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:46:23.577 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:46:25.009 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:46:26.049 | INFO     | pages:add_bulleted_list:295 - foi
-2024-08-29 19:46:26.051 | INFO     | __main__:<module>:27 - END
-2024-08-29 19:46:51.090 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:46:51.090 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:46:51.532 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:46:51.533 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:46:51.533 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:46:52.350 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:46:53.068 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:46:54.237 | INFO     | pages:add_bulleted_list:295 - foi
-2024-08-29 19:46:54.238 | INFO     | __main__:<module>:27 - END
-2024-08-29 19:50:46.368 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:50:46.368 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:50:46.947 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:50:46.948 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:50:46.948 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:50:48.504 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:50:49.055 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:50:51.070 | INFO     | pages:add_numbered_list:335 - foi
-2024-08-29 19:50:51.071 | INFO     | __main__:<module>:27 - END
-2024-08-29 19:51:05.825 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:51:05.826 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:51:06.375 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:51:06.376 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:51:06.376 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:51:07.665 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:51:11.625 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:51:12.651 | INFO     | pages:add_bulleted_list:294 - foi
-2024-08-29 19:51:12.652 | INFO     | __main__:<module>:27 - END
-2024-08-29 19:55:57.921 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:55:57.921 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:55:58.854 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:55:58.855 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:55:58.856 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:56:06.909 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:56:09.809 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:56:10.321 | ERROR    | pages:add_to_do_list:381 - {"object":"error","status":400,"code":"validation_error","message":"body failed validation. Fix one:\nbody.children[0].embed should be defined, instead was `undefined`.\nbody.children[0].bookmark should be defined, instead was `undefined`.\nbody.children[0].image should be defined, instead was `undefined`.\nbody.children[0].video should be defined, instead was `undefined`.\nbody.children[0].pdf should be defined, instead was `undefined`.\nbody.children[0].file should be defined, instead was `undefined`.\nbody.children[0].audio should be defined, instead was `undefined`.\nbody.children[0].code should be defined, instead was `undefined`.\nbody.children[0].equation should be defined, instead was `undefined`.\nbody.children[0].divider should be defined, instead was `undefined`.\nbody.children[0].breadcrumb should be defined, instead was `undefined`.\nbody.children[0].table_of_contents should be defined, instead was `undefined`.\nbody.children[0].link_to_page should be defined, instead was `undefined`.\nbody.children[0].table_row should be defined, instead was `undefined`.\nbody.children[0].ai_block should be defined, instead was `undefined`.\nbody.children[0].table should be defined, instead was `undefined`.\nbody.children[0].column_list should be defined, instead was `undefined`.\nbody.children[0].column should be defined, instead was `undefined`.\nbody.children[0].heading_1 should be defined, instead was `undefined`.\nbody.children[0].heading_2 should be defined, instead was `undefined`.\nbody.children[0].heading_3 should be defined, instead was `undefined`.\nbody.children[0].paragraph should be defined, instead was `undefined`.\nbody.children[0].bulleted_list_item should be defined, instead was `undefined`.\nbody.children[0].numbered_list_item should be defined, instead was `undefined`.\nbody.children[0].quote should be defined, instead was `undefined`.\nbody.children[0].checked should be not present, instead was `false`.\nbody.children[0].toggle should be defined, instead was `undefined`.\nbody.children[0].template should be defined, instead was `undefined`.\nbody.children[0].callout should be defined, instead was `undefined`.\nbody.children[0].synced_block should be defined, instead was `undefined`.","request_id":"fbe29633-6bb9-4374-8d1b-9f29a3c53ed7"}
-NoneType: None
-2024-08-29 19:56:10.322 | INFO     | __main__:<module>:27 - END
-2024-08-29 19:57:39.672 | INFO     | __main__:<module>:15 - starting
-2024-08-29 19:57:39.672 | INFO     | client:__init__:17 - STARTING CLIENT
-2024-08-29 19:57:40.944 | INFO     | client:open_page_by_id:46 - Page Império de Jade RPG at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8 retrieved successfully
-2024-08-29 19:57:40.945 | INFO     | client:__init__:22 - client home defined to page Império de Jade RPG at url https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
- (id eb0732ffc77245039cff079d5e179cb8)
-2024-08-29 19:57:40.945 | INFO     | client:__init__:23 - CLIENT DONE
-2024-08-29 19:57:42.377 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:57:43.515 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
-2024-08-29 19:57:44.248 | INFO     | pages:add_to_do_list:379 - foi
-2024-08-29 19:57:44.249 | INFO     | __main__:<module>:27 - END
+2024-09-05 13:27:24.381 | INFO     | client:__init__:24 - CLIENT DONE
+2024-09-05 13:27:25.168 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+2024-09-05 13:27:25.736 | INFO     | pages:add_paragraph:206 - paragraph created successfully at https://www.notion.so/Imp-rio-de-Jade-RPG-eb0732ffc77245039cff079d5e179cb8
+2024-09-05 13:27:27.043 | INFO     | pages:add_to_do_list:377 - foi
+2024-09-05 13:27:27.044 | INFO     | __main__:<module>:20 - END

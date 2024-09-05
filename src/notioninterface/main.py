@@ -1,13 +1,6 @@
 from loguru import logger
 from client import Client
-from dataclasses import asdict
 
-def test_blocks(client):
-    blcs = client.home.list_all_blocks()
-    for blc in blcs:
-        logger.info("___________________________________________________")
-        for attribute in asdict(blc).items():
-            logger.info(attribute)
 
 
 if __name__ == '__main__':

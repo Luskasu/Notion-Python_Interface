@@ -2,20 +2,21 @@ from os import getenv
 from dotenv import load_dotenv
 from loguru import logger
 from pages import Page
-from requests import post, get
-from json import dumps
+from requests import get
 from config import *
 from data_obj import *
 
+load_dotenv(".env")
+
 class Client:
     def __init__(self, home_id:str, token=getenv("NOTION_TOKEN")):
+        
         self.headers = {
             "Authorization": f"Bearer {token}",
             "Content-Type": "application/json",
             "Notion-Version": NOTION_API_VERSION
         }
         logger.info("STARTING CLIENT")
-        load_dotenv(".env")
 
         self.token = token
         self.home = self.open_page_by_id(home_id)

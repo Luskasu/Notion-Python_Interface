@@ -218,8 +218,6 @@ class Page:
         Returns:
             Response: the response object of the patch request
         """
-        if is_toggleable > 3 or is_toggleable < 1:
-            raise "heading must be an integer number between 1 to 3."
         url = f"{BLOCKS_ENDPOINT}/{self.page_id}/children"
         data = {
             "children": [
